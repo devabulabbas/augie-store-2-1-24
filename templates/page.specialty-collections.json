@@ -1,0 +1,32 @@
+{
+  "sections": {
+    "adebc460-1ae3-47c0-b917-c6d799afc082": {
+      "type": "custom-liquid",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "title": "Specialty",
+        "include_margins": true,
+        "liquid": ""
+      }
+    },
+    "main": {
+      "type": "main-collections-list",
+      "custom_css": [
+        "h1 {display: none;}"
+      ],
+      "settings": {
+        "collections_to_show": "selected",
+        "collection_linklist": "specialty",
+        "show_collection_title": true,
+        "show_collection_overlay": true,
+        "collection_overlay_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "adebc460-1ae3-47c0-b917-c6d799afc082",
+    "main"
+  ]
+}

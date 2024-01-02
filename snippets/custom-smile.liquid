@@ -1,0 +1,34 @@
+{% capture first_name %}{{ customer.first_name  | capitalize }}{% endcapture %}
+
+<div class='custom-smile-launcher'>
+  <a href="#smile-home"> 
+  <div class='custom-smile-launcher-inner'>
+    {% render 'rewardsicon' %}
+      {% if customer %}  
+      <div class='text-scroll'>
+        <p>
+        {% if first_name.size > 15 %}Welcome back!{% else %}Welcome back, {{ first_name }}!{% endif %}
+        </p>
+        <p>
+          You have <span class="sweettooth-points-balance" style="font-weight: 600;"></span> points!
+        </p>
+        <p>
+        {% if first_name.size > 15 %}Welcome back!{% else %}Welcome back, {{ first_name }}!{% endif %}
+        </p>
+      </div>
+      {% else %}
+      <div class='text-scroll'>
+        <p>
+        Earn rewards points
+        </p>
+        <p>
+          Sign up for an account
+        </p>
+        <p>
+        Earn rewards points
+        </p>
+      </div>
+      {% endif %}
+  </div>
+    </a>
+</div>

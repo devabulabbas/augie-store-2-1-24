@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "2c657836-3f78-4c47-b12e-74d247b08009": {
+      "type": "custom-liquid",
+      "settings": {
+        "title": "{{ collection.title }}",
+        "include_margins": true,
+        "liquid": "{%- if collection.description != blank -%}    <div class=\"collection__description expandable-content\" aria-expanded=\"false\">                    <div class=\"rte\">\n                            {{ collection.description }}\n                          <\/div>\n\n                  <button class=\"expandable-content__toggle\">\n                              <span class=\"expandable-content__toggle-icon\"><\/span>\n                              <span class=\"expandable-content__toggle-text\" data-view-more=\"Show more\" data-view-less=\"Show less\">Show more<\/span>\n                            <\/button>\n      <\/div>      {%- endif -%}"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "show_collection_image": true,
+        "collapse_collection_description": true,
+        "collection_image_size": "small",
+        "products_per_row": "4",
+        "default_products_per_page": 24,
+        "default_view_layout": "grid",
+        "show_quick_buy": "list",
+        "show_quick_view": "list",
+        "quick_links": "",
+        "quick_links_show_products_count": true,
+        "show_filters": true,
+        "show_filter_color_swatch": true,
+        "open_group_filters_mode": "all_closed"
+      }
+    },
+    "1698241111525c67ac": {
+      "type": "apps",
+      "blocks": {
+        "348bc739-4988-417f-b755-30d9f2396787": {
+          "type": "shopify:\/\/apps\/fast-simon-search-discovery\/blocks\/smart_collections\/95672d06-1c4e-4e1b-9368-e84ce1ad6886",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "348bc739-4988-417f-b755-30d9f2396787"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    }
+  },
+  "order": [
+    "2c657836-3f78-4c47-b12e-74d247b08009",
+    "main",
+    "1698241111525c67ac",
+    "recently-viewed-products"
+  ]
+}

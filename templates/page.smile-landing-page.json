@@ -1,0 +1,62 @@
+{
+  "sections": {
+    "smile-landing-page": {
+      "type": "smile-landing-page",
+      "settings": {
+      }
+    },
+    "1696953061748d6034": {
+      "type": "apps",
+      "blocks": {
+        "15249e4b-ae1f-4e0b-8ea2-9f34fd897e0f": {
+          "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-landing-page-header\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "title_text": "Header Text Here",
+            "description_text": "Earn reward points on every purchase. Redeem for discounts on future purchases."
+          }
+        },
+        "10ea04b4-40e8-4846-9e22-1863a4e2e76f": {
+          "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-landing-page-how-it-works\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "title_text": "How it works"
+          }
+        },
+        "9eae994d-3877-4055-8024-9ae89753382d": {
+          "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-landing-page-earning-rule-highlight\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "title_text": "Earn points for every order placed",
+            "description_text": "The more you spend, the more you save."
+          }
+        },
+        "2ed9418d-33a0-4c59-afed-1dfabb35ad2a": {
+          "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-landing-page-redeeming-rule-highlight\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "title_text": "Redeem points for rewards",
+            "description_text": "Redeem points on your next purchase, or save them up for higher value rewards."
+          }
+        }
+      },
+      "block_order": [
+        "15249e4b-ae1f-4e0b-8ea2-9f34fd897e0f",
+        "10ea04b4-40e8-4846-9e22-1863a4e2e76f",
+        "9eae994d-3877-4055-8024-9ae89753382d",
+        "2ed9418d-33a0-4c59-afed-1dfabb35ad2a"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "smile-landing-page",
+    "1696953061748d6034"
+  ]
+}

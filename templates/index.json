@@ -1,0 +1,293 @@
+{
+  "sections": {
+    "992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--14854731300941__992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-delivery",
+            "title": "Free Shipping",
+            "content": "<p>On most orders<\/p>"
+          }
+        },
+        "template--14854731300941__992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-returns",
+            "title": "Free Returns",
+            "content": "<p>On most items<\/p>"
+          }
+        },
+        "template--14854731300941__992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-customer-support",
+            "title": "Top-Notch Service",
+            "content": "<p>Here to help<\/p>"
+          }
+        },
+        "template--14854731300941__992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-secure-payment",
+            "title": "Advanced Protection",
+            "content": "<p>Safe & Secure<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14854731300941__992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc-item-1",
+        "template--14854731300941__992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc-item-2",
+        "template--14854731300941__992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc-item-3",
+        "template--14854731300941__992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc-item-4"
+      ],
+      "settings": {
+        "stack_mobile": false
+      }
+    },
+    "e120f4b0-2d68-440a-a2d6-0ca513efc4f0": {
+      "type": "promotion-list",
+      "blocks": {
+        "template--14822548176973__e120f4b0-2d68-440a-a2d6-0ca513efc4f0-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shutterstock_1715144065-min.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "stretch_image": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#112f4c",
+            "title": "About Us",
+            "content": "<p>History, certifications & W9<\/p>",
+            "content_position": "top_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#112f4c",
+            "button_text": "Learn more",
+            "button_link": "https:\/\/help.mfimedical.com\/en-US\/about-us-203237"
+          }
+        },
+        "template--14822548176973__e120f4b0-2d68-440a-a2d6-0ca513efc4f0-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shutterstock_1959570262-min.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "stretch_image": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#112f4c",
+            "title": "Earn Rewards",
+            "content": "<p>Earn points on orders<\/p>",
+            "content_position": "top_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#112f4c",
+            "button_text": "Learn more",
+            "button_link": "https:\/\/mfimedical.com\/pages\/members"
+          }
+        },
+        "template--14822548176973__e120f4b0-2d68-440a-a2d6-0ca513efc4f0-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shutterstock_1811280388-min.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "stretch_image": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#112f4c",
+            "title": "Exclusive Discounts",
+            "content": "<p>Discounts, coupons & promotions<\/p>",
+            "content_position": "top_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#112f4c",
+            "button_text": "View discounts",
+            "button_link": "shopify:\/\/pages\/medical-equipment-promotions"
+          }
+        }
+      },
+      "block_order": [
+        "template--14822548176973__e120f4b0-2d68-440a-a2d6-0ca513efc4f0-item-1",
+        "template--14822548176973__e120f4b0-2d68-440a-a2d6-0ca513efc4f0-item-2",
+        "template--14822548176973__e120f4b0-2d68-440a-a2d6-0ca513efc4f0-item-3"
+      ],
+      "custom_css": [
+
+      ],
+      "settings": {
+        "expand_items": true,
+        "section_size": "medium",
+        "stack_mobile": false
+      }
+    },
+    "428a66e3-bbbf-430e-a986-549383824a93": {
+      "type": "collection-list",
+      "blocks": {
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "stryker",
+            "link": ""
+          }
+        },
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "midmark",
+            "link": ""
+          }
+        },
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "welch-allyn",
+            "link": ""
+          }
+        },
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "edan-instruments",
+            "link": ""
+          }
+        },
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "bovie",
+            "link": ""
+          }
+        },
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": "medela",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-1",
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-2",
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-3",
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-4",
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-5",
+        "template--14822548176973__428a66e3-bbbf-430e-a986-549383824a93-collection-6"
+      ],
+      "settings": {
+        "title": "Explore brands",
+        "link_title": "View all brands",
+        "link": "shopify:\/\/collections",
+        "round_images": false,
+        "show_collection_title": false
+      }
+    },
+    "35ead1d2-db62-442e-afe8-15ae9d170ffc": {
+      "type": "collection-list",
+      "blocks": {
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "autoclaves-and-sterilizers",
+            "link": ""
+          }
+        },
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "electrosurgical-systems",
+            "link": ""
+          }
+        },
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "medical-tables",
+            "link": ""
+          }
+        },
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "ambulance-stretchers",
+            "link": ""
+          }
+        },
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "monitors",
+            "link": ""
+          }
+        },
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": "infusion-pumps",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-1",
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-2",
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-3",
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-4",
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-5",
+        "template--14822548176973__35ead1d2-db62-442e-afe8-15ae9d170ffc-collection-6"
+      ],
+      "settings": {
+        "title": "Explore types",
+        "link_title": "View all types",
+        "link": "shopify:\/\/collections",
+        "round_images": false,
+        "show_collection_title": true
+      }
+    },
+    "169874792624c021f1": {
+      "type": "apps",
+      "blocks": {
+        "87bcef08-32d0-433b-9bdb-0f972fd882b9": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "115638",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        },
+        "e72841a4-03a4-4e46-a95d-fd81395f3576": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "74524",
+            "product_id_enabled": true,
+            "collection_id_enabled": true
+          }
+        },
+        "ec6b3d6c-8cc6-4b14-b703-cb079d6c68ae": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "106088",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "87bcef08-32d0-433b-9bdb-0f972fd882b9",
+        "e72841a4-03a4-4e46-a95d-fd81395f3576",
+        "ec6b3d6c-8cc6-4b14-b703-cb079d6c68ae"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "992ef9c7-9f6a-4ec2-a170-aa601bf9ebdc",
+    "e120f4b0-2d68-440a-a2d6-0ca513efc4f0",
+    "428a66e3-bbbf-430e-a986-549383824a93",
+    "35ead1d2-db62-442e-afe8-15ae9d170ffc",
+    "169874792624c021f1"
+  ]
+}

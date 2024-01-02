@@ -1,0 +1,82 @@
+{%- if product.metafields.custom.stock_msg == "-" or product.metafields.custom.stock_msg == blank -%}
+{% assign machine = product.metafields.custom.variant_fields | split: "|" %}
+<div class="variant-custom-fields-wrapper" style='abh'>
+  {%- for variant in product.variants -%}
+
+  <div class="variant-custom-fields" data-variant-id="{{ variant.id }}" style="{% if product.selected_or_first_available_variant.id == variant.id %}display:block;{% else %}display:none;{% endif %}">
+    <div class="variant__cf" >
+    	{% if machine != blank %}
+    		{% for info in machine %}
+      			{% assign machine_item = info | split: '='%}
+      			{% assign human_name = machine_item[0] %}
+      			{% assign machine_name = machine_item[1] %}
+				{% if variant.metafields.custom[machine_name] != blank %}
+      
+      			{% if machine_name == 'stock_msg' %}
+      				{% assign stockmsg = variant.metafields.custom[machine_name] %}
+      
+      				{% if stockmsg contains 'MFI Medical' or stockmsg contains 'Ships directly' or stockmsg contains '-' %}
+      				{% else %}
+          			<p style='margin: 0;'>
+                      
+                      {% if stockmsg contains 'in stock' or stockmsg contains 'In stock' or stockmsg contains 'In Stock' %}
+                      <span data-in-stock data-tooltip="Click for more information" data-micromodal-trigger="modal-stockitem">{{ variant.metafields.custom[machine_name] }}{% render 'info-icon' %}</span>
+                      {% elsif stockmsg contains 'special' %}
+                      <span  data-tooltip="Click for more information" data-micromodal-trigger="modal-stockmsg-4">{{ variant.metafields.custom[machine_name] }}{% render 'info-icon' %}</span>
+                      {% else %}
+                      <span data-stock-msg-value="{{ variant.metafields.custom[machine_name] }}" >{{ variant.metafields.custom[machine_name] }}{% render 'info-icon' %}</span>
+                      {% endif %}
+      				</p>
+      				{% endif %}	
+      			{% endif %}
+    			{% endif %}
+    		{% endfor %}
+		{% endif %}
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
+
+{%- else -%}
+{% assign parentstockmsg = product.metafields.custom.stock_msg %}
+{% if parentstockmsg contains 'MFI Medical' or parentstockmsg contains 'Ships'  %}
+{% else %}
+<p style='padding: 0 0 15px;margin: 0;'><span class='product-form__option-name text--strong' data-stock-msg-value="{{ product.metafields.custom.machine_name | downcase  }}" style='display: inline-block;margin-bottom: 0px;'></span>
+  {% if stockmsg contains 'MFI Medical' or stockmsg contains 'Ships directly' or stockmsg contains '-' %}
+  {% elsif parentstockmsg contains 'in stock'  or parentstockmsg contains 'In stock' or parentstockmsg contains 'In Stock'%}
+  <span data-in-stock data-tooltip="Click for more information" data-micromodal-trigger="modal-stockitem">{{ parentstockmsg }}{% render 'info-icon' %}</span>
+  {% elsif parentstockmsg contains 'special' %}
+  <span  data-tooltip="Click for more information" data-micromodal-trigger="modal-stockmsg-4">{{ parentstockmsg }}{% render 'info-icon' %}</span>
+  {% else %}
+  <span data-stock-msg-value="{{ parentstockmsg }}" >{{ parentstockmsg }}</span>
+  {% endif %}
+  
+</p>
+{% endif %}
+
+{%- endif -%}
+
+
+
+
+
+<div class="modal micromodal-slide" id="modal-stockmsg-4" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal--stockmsg-3-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal--stockmsg-1-title">
+          Special order item
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-leadtime-content">
+        <p>
+A special order item will need to ship to our warehouse from the manufacturer before then shipping to you. The estimated delivery range that you see is based on the information that we receive from the manufacturer, which is also contingent upon your ordered quantity and the current inventory levels of the manufacturer. We will ship the items to you as soon as they become available, which may result in multiple shipments if you order more than one quantity.        </p>
+      <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </main>
+    </div>
+  </div>
+</div>
+
+
+

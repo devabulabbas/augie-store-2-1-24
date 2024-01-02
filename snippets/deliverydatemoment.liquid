@@ -1,0 +1,111 @@
+<script type="lazyloadscript">
+  var date = moment();
+  var holidays = ['2020-01-01', '2020-01-20', '2020-02-17', '2020-05-25',  '2020-07-04', '2020-09-07', '2020-10-12', '2020-11-11', '2020-11-26', '2020-12-25']; // Can override CMS dates by manually inputing dates here
+  var standardShip = "";
+  var range = "";
+  
+  var currentItemLeadTimeTag = document.getElementById("itemleadtime").dataset.leadtimetag;
+  console.log("currentItemLeadTimeTag = " + currentItemLeadTimeTag);
+
+  switch (currentItemLeadTimeTag) {
+    case 'lead-time-1':
+      console.log('var standardShip = 2;');
+      var standardShip = 2;
+      var range = 6;
+      break;
+    case 'lead-time-3':
+      console.log('var standardShip = 2;');
+      var standardShip = 2;
+      var range = 6;
+      break;
+    case 'lead-time-4':
+      console.log('var standardShip = 2;');
+      var standardShip = 2;
+      var range = 6;
+      break;
+    case 'lead-time-5':
+      console.log('var standardShip = 3;');
+      var standardShip = 3;
+      var range = 7;
+      break;
+    case 'lead-time-6':
+      console.log('var standardShip = 4;');
+      var standardShip = 4;
+      var range = 7;
+      break;
+    case 'lead-time-7':
+      console.log('var standardShip = 6;');
+      var standardShip = 6;
+      var range = 8;
+      break;
+    case 'lead-time-8':
+      console.log('var standardShip = 8;');
+      var standardShip = 8;
+      var range = 13;
+      break;
+    case 'lead-time-9':
+      console.log('var standardShip = 15;');
+      var standardShip = 15;
+      var range = 13;
+      break;
+    case 'lead-time-10':
+      console.log('var standardShip = 29;');
+      var standardShip = 29;
+      var range = 20;
+      break;
+    case 'lead-time-11':
+      console.log('var standardShip = 43;');
+      var standardShip = 43;
+      var range = 20;
+      break;
+    case 'lead-time-12':
+      console.log('var standardShip = 22;');
+      var standardShip = 22;
+      var range = 13;
+      break;
+    case 'lead-time-14':
+      console.log('var standardShip = 71;');
+      var standardShip = 71;
+      var range = 41;
+      break;
+    case 'lead-time-varies':
+      console.log('var standardShip = varies;');
+//       $("#etdContainer").hide();
+      break;
+    default:
+      console.log('default');
+  }
+  
+  var standardDate = addDays(date, standardShip); // -1 so that we get the date of the last shipping day not the day after
+
+  var endStandardRange = addDays(standardDate, range);   
+  
+  var formatStartRange = standardDate.format('MMMM Do');
+  var formatEndRange = endStandardRange.format('MMMM Do');
+
+
+  $('#fromDate').html( standardDate.format('MMMM Do') );
+  $('#toDate').html( endStandardRange.format('MMMM Do') );
+  $('#etd').val(formatStartRange + " to " + formatEndRange);
+
+
+  function addDays(date, days) {
+    date = moment(date); // get new instance of date
+    while (days > 0) {
+      date = date.add(1, 'days');
+      var isodate = date.format('YYYY-MM-DD');
+
+      // decrease "days" only if it's a sunday or holiday        
+      if (  date.isoWeekday() !== 7 && 
+
+          $.inArray(isodate, holidays) == -1) {  
+        days -= 1;
+
+
+      }
+
+    }
+    //alert(date.format('YYYY-MM-DD'));
+    return date;
+  };
+</script>

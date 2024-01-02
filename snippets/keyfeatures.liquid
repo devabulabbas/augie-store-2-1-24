@@ -1,0 +1,125 @@
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+
+
+{% assign kf_1 = product.metafields.custom.key_feature_1 %}
+{% assign kf_2 = product.metafields.custom.key_feature_2 %}
+{% assign kf_3 = product.metafields.custom.key_feature_3 %}
+{% assign kf_4 = product.metafields.custom.key_feature_4 %}
+{% assign kf_5 = product.metafields.custom.support_phone %}
+{% assign kf_6 = product.metafields.custom.mpn %}
+<!-- Sterilizer KF -->
+{% assign sterilizer_type = product.metafields.custom.sterilizer_type %}
+{% assign sterilizer_technology = product.metafields.custom.sterilizer_technology %}
+{% assign sterilizers_door = product.metafields.custom.sterilizers_door %}
+{% assign sterilizer_trays = product.metafields.custom.sterilizer_trays %}
+{% assign sterilizers_volume = product.metafields.custom.sterilizers_volume %}
+{% assign sterilizer_printer = product.metafields.custom.sterilizer_printer %}
+{% assign sterilizer_cycle_time = product.metafields.custom.sterilizer_cycle_time %}
+
+{% for tag in product.tags %}
+  	{% if tag contains 'Volume_' %}
+    	{% capture volume %}{{ tag | remove: 'Volume_' }}{% endcapture %}
+	{% endif %}
+  	{% if tag contains 'Technology_' %}
+    	{% capture technology %}{{ tag | remove: 'Technology_' }}{% endcapture %}
+	{% endif %}
+  	
+{% endfor %}
+
+{% for tag in product.tags %}
+{% if tag contains 'non-returnable' %}
+{% assign nonreturnable = 1 %}{% break %}
+{% endif %}
+{% endfor %}
+
+{% for tag in product.tags %}
+{% if tag contains 'Prescription' %}
+{% assign prescription = 1 %}{% break %}
+{% endif %}
+{% endfor %}
+
+<div class='flex-col'>
+  <div class="kf-content">
+    <span class="product-form__option-name text--strong h4" style='margin-bottom: 10px;margin-left: -15px;'>Key Features</span>
+    <ul class="kf-ul">
+ {% assign machine = product.metafields.custom.variant_fields | split: "|" %}
+ {% assign compare_item = '' %}
+ {%- for variant in product.variants -%}
+   {% if machine != blank %}
+    		{% for info in machine %}
+      			{% assign machine_item = info | split: '='%}
+      			{% assign machine_name = machine_item[1] %}
+              {% if machine_name == 'variant_condition' %}
+              {% assign compare_item = variant.metafields.custom[machine_name] %}
+                {% endif %}
+              {% endfor %}
+     {% endif %}
+   {% endfor %}
+            
+            <li  id='kf_condition'{%- if selected_variant.available -%}{%- else -%} style='display: none'{%- endif -%}>
+        <span class='text--strong' data-tooltip="Click for more information" {% if compare_item contains 'Factory New' or product.metafields.custom.variant_condition contains 'Factory New' %}data-micromodal-trigger="modal-factorynew"{% elsif compare_item contains 'Certified' or product.metafields.custom.variant_condition contains 'Certified' %}data-micromodal-trigger="modal-refurbished"{% endif %}>Condition:</span> 
+        {% render 'variant-condition' %}
+      </li>
+      {% render 'pp-coo' %}
+      {% if kf_coo != blank %}<li class="jumpto-container"><span id="kf_coo" class="text--strong">Country of Origin: </span>{{ kf_coo }}</li>{% endif %}
+      {%- if product.metafields.custom.warranty == "-" or product.metafields.custom.warranty == blank -%}
+        {% assign machine = product.metafields.custom.variant_fields | split: "|" %}
+       
+          {% if machine != blank %}
+    		{% for info in machine %}
+      			{% assign machine_item = info | split: '='%}
+      			{% assign human_name = machine_item[0] %}
+      			{% assign machine_name = machine_item[1] %}
+				{% if product.selected_or_first_available_variant.metafields.custom[machine_name] != blank %}
+      
+      			{% if machine_name == 'warranty' %}
+          			 <li id='kf_warranty'{%- if selected_variant.available -%}{%- else -%} style='display: none'{%- endif -%}>
+                      <span class='text--strong' data-tooltip="Click for more information" data-micromodal-trigger="modal-warranty">Warranty:</span> 
+                      <span data-tooltip="Click for more information" data-micromodal-trigger="modal-warranty">{% render 'variant-warranty' %}{% render 'info-icon' %}</span>
+                    </li>
+      			{% endif %}
+    			{% endif %}
+    		{% endfor %}
+		{% endif %}
+      {% elsif product.metafields.custom.warranty != blank %}
+         <li id='kf_warranty'{%- if selected_variant.available -%}{%- else -%} style='display: none'{%- endif -%}>
+        <span class='text--strong' data-tooltip="Click for more information" data-micromodal-trigger="modal-warranty">Warranty:</span> 
+        <span data-tooltip="Click for more information" data-micromodal-trigger="modal-warranty">{% render 'variant-warranty' %}{% render 'info-icon' %}</span>
+      </li>
+      {% endif %}
+      {% if kf_1 != blank %}<li>{{ kf_1 }}</li>{% endif %}
+      {% if kf_2 != blank %}<li>{{ kf_2 }}</li>{% endif %}
+      {% if kf_3 != blank %}<li>{{ kf_3 }}</li>{% endif %}
+      {% if kf_4 != blank %}<li>{{ kf_4 }}</li>{% endif %}
+      {% if nonreturnable == 1 %}<li>This item is non-returnable</li>{% endif %}
+      {% if prescription == 1 %}<li><strong>Intended for professional use only</strong>. Purchase of this item requires a medical license or a prescription from a licensed physician.</li>{% endif %}
+      
+
+      {% if volume %}<li><span class='text--strong'>Volume: </span>{{ volume }}</li>{% endif %}
+      {% if technology %}<li><span class='text--strong'>Technology: </span>{{ technology }}</li>{% endif %}
+
+      {% render 'jumpto_pdp_v2' %}
+    </ul>
+        <span class="product-form__option-name text--strong h4" style='margin-bottom: 10px;margin-left: -15px;'>Contact The Manufacturer</span>
+          {%  assign col_url = 'blank' %}
+    {% for collection in collections %}
+      {% if product.vendor == collection.title %}
+        {% assign col_url = collection.url %}
+        {% endif %}
+      {% endfor %}
+      {% if col_url == 'blank' %}
+        {% assign col_url = '/pages/search-results?q=' |append : product.vendor %}
+      {% endif %}
+    <ul class="kf-ul">
+    <li><span>
+        <strong>MFR: </strong>
+          <a target="_blank" class="product-meta__vendor link link--accented-reverse" href="{{ col_url }} ">
+          {{ product.vendor }} </a>{% render 'variant-ships-from' %}
+        
+      </span></li>
+      {% render 'pp-mpn' %}
+      {% if kf_6 != blank %}<li id="kf_mpn"><strong>MPN: </strong>{{ kf_6 }}</li>{% endif %}
+      {% if kf_5 != blank %}<li><strong>Phone: </strong>{{ kf_5 }}</li>{% endif %}
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+
+<div class="custom-qr-container">
+  <div class="custom-qr-content">
+    <a class="qr-box" href="#!">
+     
+      <img src="{{ block.settings.image_qr | img_url:'master' }}" alt=""/>
+    </a>
+    <div class="qr-right-box">
+      <p>{{ block.settings.content_qr }}</p>
+      <div class="app-icons">
+        <a href="{{ block.settings.google_link }}" class="icon-1">
+            <img src="{{ block.settings.image_ps | img_url:'master' }}" alt=""/>
+        </a>
+         <a href="{{ block.settings.apple_link }}" class="icon-1">
+             <img src="{{ block.settings.image_as | img_url:'master' }}" alt=""/>
+         </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+{
+  "sections": {
+    "58d54ff4-8f04-4471-afc8-665b5c0280dd": {
+      "type": "custom-liquid",
+      "settings": {
+        "title": "{{ collection.title }}",
+        "include_margins": true,
+        "liquid": "{%- if collection.description != blank -%}    <div class=\"collection__description expandable-content\" aria-expanded=\"false\">                    <div class=\"rte\">\n                            {{ collection.description }}\n                          <\/div>\n\n                  <button class=\"expandable-content__toggle\">\n                              <span class=\"expandable-content__toggle-icon\"><\/span>\n                              <span class=\"expandable-content__toggle-text\" data-view-more=\"{{ 'collection.general.view_more' | t | escape }}\" data-view-less=\"{{ 'collection.general.view_less' | t | escape }}\">{{- 'collection.general.view_more' | t -}}<\/span>\n                            <\/button>\n      <\/div>      {%- endif -%}"
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "settings": {
+        "show_collection_image": false,
+        "collapse_collection_description": false,
+        "collection_image_size": "small",
+        "products_per_row": "4",
+        "default_products_per_page": 24,
+        "default_view_layout": "grid",
+        "show_quick_buy": "list",
+        "show_quick_view": "list",
+        "quick_links": "",
+        "quick_links_show_products_count": true,
+        "show_filters": true,
+        "show_filter_color_swatch": true,
+        "open_group_filters_mode": "all_closed"
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    }
+  },
+  "order": [
+    "58d54ff4-8f04-4471-afc8-665b5c0280dd",
+    "main",
+    "recently-viewed-products"
+  ]
+}

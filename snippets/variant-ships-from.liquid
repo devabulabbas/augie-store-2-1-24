@@ -1,0 +1,113 @@
+{%- if product.metafields.custom.ships_from == "-" or product.metafields.custom.ships_from == blank -%}
+
+{% assign machine = product.metafields.custom.variant_fields | split: "|" %}
+
+<div class="variant-custom-fields-wrapper" style='display: inline-block;'>
+  {%- for variant in product.variants -%}
+
+  <div class="variant-custom-fields" data-variant-id="{{ variant.id }}" style="{% if product.selected_or_first_available_variant.id == variant.id %}display:block;{% else %}display:none;{% endif %}">
+    <div class="variant__cf" >
+    	{% if machine != blank %}
+    		{% for info in machine %}
+      			{% assign machine_item = info | split: '='%}
+      			{% assign human_name = machine_item[0] %}
+      			{% assign machine_name = machine_item[1] %}
+				{% if variant.metafields.custom[machine_name] != blank %}
+      
+      			{% if machine_name == 'ships_from' %}
+      				{% assign shipsfrommsg = variant.metafields.custom[machine_name] %}
+          			<span style='padding-left: 8px;border-left: 1px solid rgba(0,0,0,.2);'>
+<!--                   		<span class='product-form__option-name text--strong' data-stock-msg-value="{{ shipsfrommsg  }}" style='display: inline-block;margin-bottom: 0px;'>{{ human_name }}:&nbsp;</span> -->
+                      
+                      
+                      {% if shipsfrommsg contains 'MFI Medical' %}
+                      <span  data-tooltip="Click for more information" data-micromodal-trigger="modal-shipsfrommsg-2">{{ shipsfrommsg  }}{% render 'info-icon' %}</span>
+                      {% elsif shipsfrommsg contains 'Ships from' %}
+                      <span  data-tooltip="Click for more information" data-micromodal-trigger="modal-shipsfrommsg-3">{{ shipsfrommsg  }}{% render 'info-icon' %}</span>
+                      {% else %}
+                      <span data-stock-msg-value="{{ shipsfrommsg   }}" >{{ shipsfrommsg   }}</span>
+                      {% endif %}
+      				</span>
+      			{% endif %}
+    			{% endif %}
+    		{% endfor %}
+		{% endif %}
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
+
+{%- elsif product.metafields.custom.ships_from != blank -%}
+{% assign parentshipsfrommsg = product.metafields.custom.ships_from %}
+<!-- <p style='padding: 0;margin: 0;'><span class='product-form__option-name text--strong' data-stock-msg-value="{{ parentshipsfrommsg  }}" style='display: inline-block;margin-bottom: 0px;'></span> -->
+<span style='padding-left: 6px;border-left: 1px solid rgba(0,0,0,.2);'>
+
+  {% if parentshipsfrommsg contains 'MFI Medical' %}
+  <span  data-tooltip="Click for more information" data-micromodal-trigger="modal-shipsfrommsg-2">{{ parentshipsfrommsg }}{% render 'info-icon' %}</span>
+  {% elsif parentshipsfrommsg contains 'Ships from' %}
+  <span  data-tooltip="Click for more information" data-micromodal-trigger="modal-shipsfrommsg-3">{{ parentshipsfrommsg }}{% render 'info-icon' %}</span>
+  {% elsif parentshipsfrommsg contains 'special' %}
+  <span  data-tooltip="Click for more information" data-micromodal-trigger="modal-shipsfrommsg-4">{{ parentshipsfrommsg }}{% render 'info-icon' %}</span>
+  {% else %}
+  <span data-stock-msg-value="{{ parentshipsfrommsg }}" >{{ parentshipsfrommsg }}</span>
+  {% endif %}
+  
+</span>
+{%- else -%}
+{%- endif -%}
+
+
+<div class="modal micromodal-slide" id="modal-shipsfrommsg-2" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal--stockmsg-3-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal--stockmsg-1-title">
+          This item ships from MFI Medical
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-leadtime-content">
+        <p>
+The displayed information indicates the present stock level of this item. Additional quantity is available and may have an extended estimated delivery range. We will provide you with regular updates throughout the order process.        </p>
+      <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </main>
+    </div>
+  </div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-shipsfrommsg-3" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal--stockmsg-3-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal--stockmsg-1-title">
+          Items shipped from the manufacturer
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-leadtime-content">
+        <p>
+This item will be shipped directly from the manufacturer to your doorstep, ensuring that you receive the newest product available. The estimated delivery range provided is based on the manufacturer's inventory levels and is subject to change depending on the quantity ordered. We ship items as soon as they become available, so if you order multiple quantities, you may receive them in separate shipments.        </p>
+      <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </main>
+    </div>
+  </div>
+</div>
+
+<div class="modal micromodal-slide" id="modal-shipsfrommsg-4" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal--stockmsg-3-title">
+      <header class="modal__header">
+        <h2 class="modal__title" id="modal--stockmsg-1-title">
+          Special order item
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <main class="modal__content" id="modal-leadtime-content">
+        <p>
+         A special order item will need to ship to our warehouse from the manufacturer before then shipping to you. The estimated delivery range that you see is based on the information that we receive from the manufacturer, which is also contingent upon your ordered quantity and the current inventory levels of the manufacturer. We will ship the items to you as soon as they become available, which may result in multiple shipments if you order more than one quantity.
+        </p>
+      <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </main>
+    </div>
+  </div>
+</div>

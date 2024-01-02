@@ -1,0 +1,66 @@
+{% for block in section.blocks %}
+{% unless block.settings.hidemodalcompletely %}
+<div class="modal micromodal-slide" id="modal-{{ block.settings.modalname }}" aria-hidden="true">
+  <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+    <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-{{ block.settings.modalname }}-title">
+      <header class="modal__header">
+        <h2 class="modal__title heading h1" id="modal-{{ block.settings.modalname }}-title">
+          {{ block.settings.title }}
+        </h2>
+        <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+      </header>
+      <div class="modal__content modal-{{ block.settings.modalname }}" id="modal-{{ block.settings.modalname }}-content">
+        {{ block.settings.content }}
+        <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+{% endunless %}
+{% endfor %}
+
+
+{% schema %}
+  {
+  "name": "Imans Micro Modals",
+  "max_blocks": 20,
+  "settings": [
+      {
+        "type": "color",
+        "id": "background_color",
+        "label": "Background Color" ,
+        "default": "rgb(255,255,255)"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "modal",
+        "name": "Modal",
+        "settings": [
+            {
+              "type": "text",
+              "id": "title",
+              "label": "Modal Title",
+              "default": "TITLE"
+            },
+            {
+              "type": "text",
+              "id": "modalname",
+              "label": "Modal Name"
+            },
+            {
+              "type": "html",
+              "id": "content",
+              "label": "Modal Content"
+            },
+            {
+              "type": "checkbox",
+              "id": "hidemodalcompletely",
+              "label": "Hide modal completely?",
+              "default": false
+            }
+        ]
+      }
+    ]
+}
+{% endschema %}

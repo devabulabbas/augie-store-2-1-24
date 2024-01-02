@@ -1,0 +1,180 @@
+{
+  "sections": {
+    "164261831711000b61": {
+      "type": "slideshow",
+      "blocks": {
+        "16426183176a4ba5b7-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shutterstock_697871452_bdb92322-c2ae-4f42-ab58-198483b1ead1.png",
+            "show_overlay": true,
+            "overlay_opacity": 100,
+            "text_color": "#ffffff",
+            "title": "Finance your purchase today!",
+            "content": "Keep your cash and get the equipment you need.",
+            "content_position": "middle_center",
+            "button_background": "#ffb00c",
+            "button_text_color": "#000000",
+            "button_text": "Apply for Financing",
+            "link": "https:\/\/apply.marlincapitalsolutions.com\/auth\/EF?partnerid=800633154BEWAAI"
+          }
+        }
+      },
+      "block_order": [
+        "16426183176a4ba5b7-0"
+      ],
+      "settings": {
+        "edge_to_edge": true,
+        "section_size": "medium",
+        "carousel_effect": "slide",
+        "autoplay": false,
+        "cycle_speed": 5
+      }
+    },
+    "16426186627eb77a48": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/doctor_computer.jpg",
+        "image_position": "left",
+        "image_width": 50,
+        "title": "Take advantage of flexible financing today",
+        "content": "<p>MFI Medical has partnered with Marlin Capital Solutions and <a href=\"https:\/\/www.paypal.com\/us\/webapps\/mpp\/paypal-credit\" target=\"_blank\">PayPal Credit<\/a> to offer special financing options. Marlin Capital Solutions serves businesses in healthcare, construction, food service, and many other sectors. PayPal Credit is available to all customers.<\/p>",
+        "button_text": "Apply for Financing",
+        "button_link": "https:\/\/apply.marlincapitalsolutions.com\/auth\/EF?partnerid=800633154BEWAAI"
+      }
+    },
+    "1642621923c10d3746": {
+      "type": "rich-text",
+      "settings": {
+        "text_width": "regular",
+        "title": "Benefits of financing",
+        "content": "",
+        "button_text": "Our products",
+        "button_link": ""
+      }
+    },
+    "16426187194b7dc5cc": {
+      "type": "offers",
+      "blocks": {
+        "1642618719c1080147-0": {
+          "type": "offer",
+          "settings": {
+            "title": "100% Financing",
+            "content": "<p>Finance 100% of your purchase<\/p>"
+          }
+        },
+        "1642618719c1080147-1": {
+          "type": "offer",
+          "settings": {
+            "title": "Flexible Terms",
+            "content": "<p>Flexible terms that can fit your needs<\/p>"
+          }
+        },
+        "ca151088-5d4a-4358-bd3d-36ca79625ba5": {
+          "type": "offer",
+          "settings": {
+            "title": "Fast Processing",
+            "content": "<p>Most applications are processed within 2 hours<\/p>"
+          }
+        },
+        "a47c9deb-ff03-451b-b5eb-98620d96d212": {
+          "type": "offer",
+          "settings": {
+            "title": "Improved Cash Flow",
+            "content": "<p>With affordable monthly payments and no hefty down payments, you can keep your cash flow flowing<\/p>"
+          }
+        },
+        "02fa54c7-ad82-4f24-8242-e308d8b0b6a5": {
+          "type": "offer",
+          "settings": {
+            "title": "Flexibility",
+            "content": "<p>As your business grows and needs change, you will be able to upgrade equipment at any point during the financing term<\/p>"
+          }
+        },
+        "6e080ef8-b9df-4264-ac82-d25f128cac14": {
+          "type": "offer",
+          "settings": {
+            "title": "Free Up Lines of Credit",
+            "content": "<p>Save your bank lines of credit for emergencies<\/p>"
+          }
+        },
+        "78422b66-57de-41f5-9bbe-146c91c2dadf": {
+          "type": "offer",
+          "settings": {
+            "title": "Tax Benefits",
+            "content": "<p>You can take advantage of generous IRS tax savings and realize savings that are greater than what you pay in the first year of the lease<\/p>"
+          }
+        },
+        "0088e9a7-96a1-4f07-add3-e4842536820a": {
+          "type": "offer",
+          "settings": {
+            "title": "Fixed Monthly Payments",
+            "content": "<p>Accurately forecast your spending with fixed payments during the financing period<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1642618719c1080147-0",
+        "1642618719c1080147-1",
+        "ca151088-5d4a-4358-bd3d-36ca79625ba5",
+        "a47c9deb-ff03-451b-b5eb-98620d96d212",
+        "02fa54c7-ad82-4f24-8242-e308d8b0b6a5",
+        "6e080ef8-b9df-4264-ac82-d25f128cac14",
+        "78422b66-57de-41f5-9bbe-146c91c2dadf",
+        "0088e9a7-96a1-4f07-add3-e4842536820a"
+      ],
+      "settings": {
+        "items_per_row": 2,
+        "stack_mobile": false
+      }
+    },
+    "169849252870100039": {
+      "type": "apps",
+      "blocks": {
+        "85c8ecb9-4018-4f23-af8f-a06287ba6bd7": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "115638",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "2b886375-415b-4a04-8443-0b5130d050df": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "74524",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "5d1fca28-63f4-4ce3-a773-e11362b9dd47": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "106088",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "85c8ecb9-4018-4f23-af8f-a06287ba6bd7",
+        "2b886375-415b-4a04-8443-0b5130d050df",
+        "5d1fca28-63f4-4ce3-a773-e11362b9dd47"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "164261831711000b61",
+    "16426186627eb77a48",
+    "1642621923c10d3746",
+    "16426187194b7dc5cc",
+    "169849252870100039"
+  ]
+}

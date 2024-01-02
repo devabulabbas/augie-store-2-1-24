@@ -1,0 +1,37 @@
+
+<div class='pp-below-atc' style='text-align: left;'>
+
+<hr class="card__separator" style='margin: 10px 0;'>
+  <h3 class='product-form__option-name text--strong' style='margin-bottom: 3px;'>Shop with Confidence</h3>
+  
+  {%- render 'pp-shipping-returns' -%}
+  
+  <p class='modal-open-link link--accented-reverse modal-pricematch' style='margin-bottom: 0;' data-micromodal-trigger="modal-pmg" onclick="ga('send', 'event', 'PDP Links', 'click', 'Price Match Modal');">
+    <span style='font-size: 14px;'>Price Match Guarantee</span>
+  </p>
+  
+  <p class='modal-open-link link--accented-reverse modal-dedicated' style='margin-bottom: 0;' data-micromodal-trigger="modal-taxexempt" onclick="ga('send', 'event', 'PDP Links', 'click', 'Tax Exempt Modal');">
+    <span style='font-size: 14px;'>Sales Tax Exemption</span>
+  </p>
+   
+  <p class='modal-open-link link--accented-reverse modal-dedicated' style='margin-bottom: 0;' data-micromodal-trigger="modal-dedicated" onclick="ga('send', 'event', 'PDP Links', 'click', 'AM Modal');">
+    <span style='font-size: 14px;'>Dedicated Account Managers</span>
+  </p>
+
+  <div style='display: none;'>
+    <hr class="card__separator">
+    <h3 class='product-form__option-name text--strong' style='margin-bottom: 3px;'>Not ready to buy just yet?</h3>
+  <p class='' style='margin-bottom: 5px;' onclick="ga('send', 'event', 'PDP Links', 'click', 'Add to quote');">
+    <span class='notreadybutton' style='font-size: 14px;'>Add this item to a quote</span>
+  </p>
+  </div>
+</div>
+<style>
+  .notreadybutton {
+    padding: 8px;
+    border: 1px solid rgba(0, 68, 158, 0.1);
+    background: rgba(240, 248, 255, 0.5);
+    border-radius: 3px;
+    color: #00449e;
+  }
+</style>

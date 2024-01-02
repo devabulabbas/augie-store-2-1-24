@@ -1,0 +1,178 @@
+<div class="container">
+    <header class="page__header page__header--centered">
+      <h1 class="page__title heading h1">{{ page.title }}</h1>
+    </header>
+    <div class='manufacturer-promotions'>
+      <div class='flex-col promo-block-wrapper'>
+        {% for block in section.blocks %}
+  
+        {% unless block.settings.hide %}
+        {% assign collection = collections[block.settings.collection] %}
+  
+        <div class="flex-col-row promoblock" id='{{ block.settings.id | handleize }}'>
+          <div class='promo-image'>
+            <img src='{{ collection.image | img_url:"280x" }}'>
+          </div>
+          <div class='promo-content'>
+            <div class='flex-col-row ai-c promodetails'>
+              <div class='promodetail-left'>
+                <div class='promotitle'>
+                  <h3 class='heading'>{{ block.settings.title | escape }}</h3>
+                </div>
+                {% if block.settings.promo_details != blank %}
+                <p class="">
+                  {{ block.settings.promo_details | escape }}
+                </p>
+                {% endif %}
+                {% if block.settings.flyerlink != blank %}
+                <p><a class='iman__action-link link read_more_link' href='{{ block.settings.flyerlink }}' target='_blank'>View additional details{%- render 'icon', icon: 'tail-right' -%}</a></p>
+                {% endif %}
+                
+                {% if collection != blank %}
+                <div class="flex-col-row ai-fs jc-spb promobuttons">
+                  <a class="button button--primary" href="/collections/{{ collection.handle }}/{{ block.settings.id | handleize }}">
+                    {{ block.settings.button_text | escape }}
+                  </a>
+                  &nbsp;
+                  {% if block.settings.buttontwo_link != blank %}
+                  <a class="button button--secondary" href="{{ block.settings.buttontwo_link }}" target="_blank">
+                    {{ block.settings.button2_text | escape }}
+                  </a>     
+                  {% endif %}
+                </div>
+              </div>
+              <div class='promodetail-right'>
+                <p class="">
+                  <strong>How to Redeem</strong>: {{ block.settings.redemption }}
+                </p>
+                {% if block.settings.promocode != blank %}
+                <p class="">
+                  <strong>Promo Code</strong>: <strong>{{ block.settings.redemption }}</strong>
+                </p>
+                {% endif %}
+                <p class="">
+                  <strong>Redeem by {{ block.settings.expiration }}</strong>
+                </p>
+              </div>
+              {% endif %}
+            </div>
+          </div>
+        </div>
+        {% endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  
+  {% schema %}
+  {
+    "name": "Promo Page Blocks",
+    "class": "promopage",
+    "max_blocks": 50,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Promotions"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "value",
+        "name": "Value",
+        "settings": [
+          {
+            "type": "checkbox",
+            "id": "hide",
+            "label": "Hide?",
+            "default": false
+          },
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Promo Title",
+            "default": "PROMO TITLE"
+          },
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection for image"
+          },
+          {
+            "type": "textarea",
+            "id": "promo_details",
+            "label": "Promo Details"
+          },
+          {
+            "type": "textarea",
+            "id": "redemption",
+            "label": "How to Redeem",
+            "default": "Discount automatically applied at checkout. Call to redeem <a class='link link--accented' href='tel:+18006331558'>(800) 633-1558</a>."
+          },
+          {
+            "type": "text",
+            "id": "promocode",
+            "label": "Promo Code"
+          },
+          {
+            "type": "textarea",
+            "id": "expiration",
+            "label": "Expiration",
+            "default": "March 31, 2021"
+          },
+          {
+            "id": "id",
+            "type": "text",
+            "label": "ID for block",
+            "info": "sale tag"
+          },
+          {
+            "type": "text",
+            "id": "button_text",
+            "label": "Shop button 1" ,
+            "default": "View Sale Items"
+          },
+          {
+            "type": "url",
+            "id": "buttontwo_link",
+            "label": "Second Link"
+          },
+          {
+            "type": "text",
+            "id": "button2_text",
+            "label": "Shop button 2" ,
+            "default": "Redeem Rebate"
+          },
+          {
+            "type": "url",
+            "id": "flyerlink",
+            "label": "Flyer Link"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "Custom Sections",
+        "name": "Promotions",
+        "blocks": [
+          {
+            "type": "value"
+          },
+          {
+            "type": "value"
+          },
+          {
+            "type": "value"
+          },
+          {
+            "type": "value"
+          }
+        ]
+      }
+    ]
+  }
+  {% endschema %}
+  
+  

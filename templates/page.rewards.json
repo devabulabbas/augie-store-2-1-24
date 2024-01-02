@@ -1,0 +1,210 @@
+{
+  "sections": {
+    "1696952940ff3f7bec": {
+      "type": "apps",
+      "blocks": {
+        "9dc8198e-c838-4e3a-9d8c-676bf82c72bc": {
+          "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-landing-page-header\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "title_text": "Become an MFI Member today",
+            "description_text": "Earn reward points on every purchase. Redeem for discounts on future purchases."
+          }
+        },
+        "ba3b90ef-1245-47ce-b08c-2843a2a9bcd6": {
+          "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-landing-page-how-it-works\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "title_text": "How it works"
+          }
+        },
+        "8cacb8bc-106d-440a-8d0f-d904db5ae404": {
+          "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-landing-page-earning-rule-highlight\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "image": "shopify:\/\/shop_images\/shutterstock_535084903-min.jpg",
+            "title_text": "Earn points for every order placed",
+            "description_text": "The more you spend, the more you save."
+          }
+        },
+        "eb3e2b8d-5c38-457b-ac03-a3490fb14e5c": {
+          "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-landing-page-redeeming-rule-highlight\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+          "settings": {
+            "primary_colour": "#333333",
+            "secondary_colour": "#ffffff",
+            "image": "shopify:\/\/shop_images\/shutterstock_1919008415.jpg",
+            "title_text": "Redeem points for rewards",
+            "description_text": "Redeem points on your next purchase, or save them up for higher value rewards."
+          }
+        }
+      },
+      "block_order": [
+        "9dc8198e-c838-4e3a-9d8c-676bf82c72bc",
+        "ba3b90ef-1245-47ce-b08c-2843a2a9bcd6",
+        "8cacb8bc-106d-440a-8d0f-d904db5ae404",
+        "eb3e2b8d-5c38-457b-ac03-a3490fb14e5c"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "1642626547f24d0087": {
+      "type": "rich-text",
+      "disabled": true,
+      "settings": {
+        "text_width": "narrow",
+        "title": "",
+        "content": "<h1>All the ways to earn rewards<\/h1>",
+        "button_text": "Our products",
+        "button_link": ""
+      }
+    },
+    "1642625458b2515781": {
+      "type": "offers",
+      "blocks": {
+        "1642625458daf7d64b-0": {
+          "type": "offer",
+          "settings": {
+            "title": "250 Points for signing up",
+            "content": "<p>Receive 250 points when you sign up for your account (it's free!)<\/p>"
+          }
+        },
+        "13e4556d-c720-431d-ad4d-a74b23288eba": {
+          "type": "offer",
+          "settings": {
+            "title": "Gold Level Members earn 1 point",
+            "content": "<p><strong>Earn 1 point for every dollar spent<\/strong> when you're a Gold level member. All new members start off at the Gold level.<\/p>"
+          }
+        },
+        "4823df2d-e38b-48a8-b79e-cb788f3e67d0": {
+          "type": "offer",
+          "settings": {
+            "title": "Platinum Level Members earn 2 points",
+            "content": "<p><strong>Earn 2 points for every dollar spent<\/strong> when you're a Platinum level member. Reach Platinum status after spending $800 at MFI<\/p>"
+          }
+        },
+        "b808aac0-27f0-4314-a359-205ee11f7a13": {
+          "type": "offer",
+          "settings": {
+            "title": "Diamond Level Members earn 3 points",
+            "content": "<p><strong>Earn 3 points for every dollar spent<\/strong> when you're a Diamond level member. Reach Diamond status after spending $2,500 at MFI<\/p>"
+          }
+        },
+        "f6ff88f5-7620-48c6-8bde-542d7d22c508": {
+          "type": "offer",
+          "settings": {
+            "title": "Receive a 5% coupon",
+            "content": "<p>Reach Platinum level by spending $800 at MFI, and we'll send you a <strong>5% coupon <\/strong>to use on your next purchase<\/p>"
+          }
+        },
+        "47e58008-3668-4104-9955-eb195f1b3cd0": {
+          "type": "offer",
+          "settings": {
+            "title": "Receive a 10% off coupon",
+            "content": "<p>Reach Diamond level by spending $2,500 at MFI, and we'll send you a <strong>10% coupon<\/strong> to use on your next purchase<\/p>"
+          }
+        },
+        "90b364c6-48dc-4379-b06d-807c5dfe271a": {
+          "type": "offer",
+          "settings": {
+            "title": "250 Points for product reviews",
+            "content": "<p>For every product review, you'll receive 250 points (maximum of 5 product reviews)<\/p>"
+          }
+        },
+        "d0f98d5c-94aa-453f-8699-ec1690bcf209": {
+          "type": "offer",
+          "settings": {
+            "title": "500 Points for reviewing MFI Medical",
+            "content": "<p>Leave a review of your experience working with MFI, and get 500 points<\/p>"
+          }
+        },
+        "1642625458daf7d64b-1": {
+          "type": "offer",
+          "settings": {
+            "title": "250 Bonus points after your second order",
+            "content": "<p>Get an extra 250 points when you place your second online order with MFI<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1642625458daf7d64b-0",
+        "13e4556d-c720-431d-ad4d-a74b23288eba",
+        "4823df2d-e38b-48a8-b79e-cb788f3e67d0",
+        "b808aac0-27f0-4314-a359-205ee11f7a13",
+        "f6ff88f5-7620-48c6-8bde-542d7d22c508",
+        "47e58008-3668-4104-9955-eb195f1b3cd0",
+        "90b364c6-48dc-4379-b06d-807c5dfe271a",
+        "d0f98d5c-94aa-453f-8699-ec1690bcf209",
+        "1642625458daf7d64b-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "items_per_row": 2,
+        "stack_mobile": false
+      }
+    },
+    "1642625051fff72d5d": {
+      "type": "image-with-text",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/shutterstock_479719747.jpg",
+        "image_position": "right",
+        "image_width": 50,
+        "title": "Give $15, get $15 for every referral",
+        "content": "<p>Refer your friends and colleagues to MFI Medical, and we'll send you both a $15 coupon after they place their first order<\/p>",
+        "button_text": "Become a Member",
+        "button_link": "https:\/\/mfimedical.com\/account\/register"
+      }
+    },
+    "16984927009d3e8ddf": {
+      "type": "apps",
+      "blocks": {
+        "f685895b-8055-488f-87f2-8206614694f0": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "115638",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "66cbe8d1-93d0-402a-86d6-02e0bda551c3": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "74524",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "6f11c314-877a-43a5-8041-19420db5a21c": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "106088",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "f685895b-8055-488f-87f2-8206614694f0",
+        "66cbe8d1-93d0-402a-86d6-02e0bda551c3",
+        "6f11c314-877a-43a5-8041-19420db5a21c"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "1696952940ff3f7bec",
+    "1642626547f24d0087",
+    "1642625458b2515781",
+    "1642625051fff72d5d",
+    "16984927009d3e8ddf"
+  ]
+}

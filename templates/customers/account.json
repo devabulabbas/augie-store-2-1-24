@@ -1,0 +1,101 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-customers-account",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "1478e9ae-464d-4b62-a5ff-06035a05c429": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--14854731726925__1478e9ae-464d-4b62-a5ff-06035a05c429-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-delivery",
+            "title": "Free delivery worldwide",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "template--14854731726925__1478e9ae-464d-4b62-a5ff-06035a05c429-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-returns",
+            "title": "Satisfied or refunded",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "template--14854731726925__1478e9ae-464d-4b62-a5ff-06035a05c429-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-customer-support",
+            "title": "Top-notch support",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "template--14854731726925__1478e9ae-464d-4b62-a5ff-06035a05c429-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-secure-payment",
+            "title": "Secure payments",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14854731726925__1478e9ae-464d-4b62-a5ff-06035a05c429-item-1",
+        "template--14854731726925__1478e9ae-464d-4b62-a5ff-06035a05c429-item-2",
+        "template--14854731726925__1478e9ae-464d-4b62-a5ff-06035a05c429-item-3",
+        "template--14854731726925__1478e9ae-464d-4b62-a5ff-06035a05c429-item-4"
+      ],
+      "settings": {
+        "stack_mobile": false
+      }
+    },
+    "1700224718247aae24": {
+      "type": "apps",
+      "blocks": {
+        "f6cc3814-539b-4841-b63c-7be72ba82683": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "115638",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "69db27f5-cf88-438f-a740-405c023bea34": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "74524",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "39877ec0-fe5d-4f46-8583-584e53cf5d65": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "106088",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "f6cc3814-539b-4841-b63c-7be72ba82683",
+        "69db27f5-cf88-438f-a740-405c023bea34",
+        "39877ec0-fe5d-4f46-8583-584e53cf5d65"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1478e9ae-464d-4b62-a5ff-06035a05c429",
+    "1700224718247aae24"
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "text-with-icons": {
+      "type": "text-with-icons",
+      "blocks": {
+        "item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-delivery",
+            "title": "Free shipping",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-returns",
+            "title": "Satisfied or refunded",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-customer-support",
+            "title": "Top-notch support",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-secure-payment",
+            "title": "Secure payments",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "item-1",
+        "item-2",
+        "item-3",
+        "item-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "stack_mobile": false
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "footer-0": {
+          "type": "text",
+          "settings": {
+            "title": "MFI Medical",
+            "content": "<p>10695 Treena Street, #105<\/p><p>San Diego, CA 92131<\/p><p><a href=\"tel:(800) 633-1558\" title=\"tel:(800) 633-1558\">(800) 633-1558<\/a><\/p><p><a href=\"tel:(858) 831-7718\" title=\"tel:(858) 831-7718\">(858) 831-7718<\/a><\/p><p><a href=\"mailto:info@mfimedical.com\" title=\"mailto:info@mfimedical.com\">info@mfimedical.com<\/a><\/p>"
+          }
+        },
+        "57c89340-67b7-4c41-91e7-9e247a8a9b10": {
+          "type": "qrcode",
+          "settings": {
+            "ced_title": "Download Our App",
+            "image_qr": "shopify:\/\/shop_images\/WhatsApp_Image_2023-04-20_at_18.56.20.jpg",
+            "image_ps": "shopify:\/\/shop_images\/Google-play-store.png",
+            "google_link": "https:\/\/play.google.com\/store\/apps\/details?id=co.tapcart.app.id_lwZQC30EPB&hl=en&gl=US",
+            "image_as": "shopify:\/\/shop_images\/App-store.png",
+            "apple_link": "https:\/\/apps.apple.com\/us\/app\/mfi-medical\/id1639398196",
+            "content_qr": "<p>Scan The QR Code to download the new App<\/p>"
+          }
+        },
+        "e6d53fa2-98dc-47f1-873e-a165d1f1717e": {
+          "type": "links",
+          "settings": {
+            "menu": "customer-support-menu"
+          }
+        },
+        "footer-1": {
+          "type": "links",
+          "settings": {
+            "menu": "resources-menu"
+          }
+        }
+      },
+      "block_order": [
+        "footer-0",
+        "57c89340-67b7-4c41-91e7-9e247a8a9b10",
+        "e6d53fa2-98dc-47f1-873e-a165d1f1717e",
+        "footer-1"
+      ],
+      "settings": {
+        "show_social_media": true,
+        "enable_follow_on_shop": false,
+        "show_payment_icons": true,
+        "show_locale_selector": false,
+        "show_country_selector": false
+      }
+    }
+  },
+  "order": [
+    "text-with-icons",
+    "footer"
+  ]
+}

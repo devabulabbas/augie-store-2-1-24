@@ -1,0 +1,95 @@
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "disabled": true,
+      "settings": {
+        "background": "#1e2d7d",
+        "text_color": "#ffffff",
+        "text": "Announce something here",
+        "text_position": "left",
+        "link": "",
+        "show_newsletter": true,
+        "newsletter_button": "Subscribe & Save",
+        "newsletter_title": "Newsletter",
+        "newsletter_content": "<p>A short sentence describing what someone will receive by subscribing<\/p>"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "enable_sticky_header": true,
+        "logo": "shopify:\/\/shop_images\/mfi-2020-logo-white_627a8e36-76b5-4300-800e-168abd4850ef.png",
+        "logo_max_width": 200,
+        "mobile_logo_max_width": 150,
+        "show_locale_selector": false,
+        "show_country_selector": false,
+        "navigation_menu": "new-shopify-menu",
+        "navigation_mobile_menu": "",
+        "desktop_navigation_layout": "inline",
+        "desktop_navigation_open_trigger": "hover",
+        "show_navigation_social_media": true,
+        "navigation_phone_number": "Call us 858-831-7718",
+        "navigation_email": "info@mfimedical.com",
+        "show_condensed_search": false,
+        "show_search_filter": false,
+        "search_menu": "",
+        "show_search_menu_title": true
+      }
+    },
+    "90a8f194-f30b-4bb6-b93e-63e6aca1e0d7": {
+      "type": "text-with-icons",
+      "blocks": {
+        "sections--14854731989069__90a8f194-f30b-4bb6-b93e-63e6aca1e0d7-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-delivery",
+            "title": "Free Shipping",
+            "content": "<p>On most orders<\/p>"
+          }
+        },
+        "sections--14854731989069__90a8f194-f30b-4bb6-b93e-63e6aca1e0d7-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-returns",
+            "title": "Free Returns",
+            "content": "<p>On most items<\/p>"
+          }
+        },
+        "sections--14854731989069__90a8f194-f30b-4bb6-b93e-63e6aca1e0d7-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-customer-support",
+            "title": "Top-Notch Service",
+            "content": "<p>Here to help<\/p>"
+          }
+        },
+        "sections--14854731989069__90a8f194-f30b-4bb6-b93e-63e6aca1e0d7-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-secure-payment",
+            "title": "Advanced Protection",
+            "content": "<p>Safe & Secure<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "sections--14854731989069__90a8f194-f30b-4bb6-b93e-63e6aca1e0d7-item-1",
+        "sections--14854731989069__90a8f194-f30b-4bb6-b93e-63e6aca1e0d7-item-2",
+        "sections--14854731989069__90a8f194-f30b-4bb6-b93e-63e6aca1e0d7-item-3",
+        "sections--14854731989069__90a8f194-f30b-4bb6-b93e-63e6aca1e0d7-item-4"
+      ],
+      "disabled": true,
+      "settings": {
+        "stack_mobile": false
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "90a8f194-f30b-4bb6-b93e-63e6aca1e0d7"
+  ]
+}

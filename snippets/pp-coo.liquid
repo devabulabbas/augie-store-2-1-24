@@ -1,0 +1,34 @@
+
+{%- if product.metafields.custom.country_of_origin == "-" or product.metafields.custom.country_of_origin == blank -%}
+  {% if product.selected_or_first_available_variant.metafields.custom.country_of_origin != blank %}
+    <li>
+    {% assign machine = product.selected_or_first_available_variant.metafields.custom.country_of_origin %}
+    <div class="variant-custom-fields-wrapper" style='display: inline-block;'>
+      {%- for variant in product.variants -%}
+        
+      <div class="variant-custom-fields" data-variant-id="{{ variant.id }}" style="{% if product.selected_or_first_available_variant.id == variant.id %}display:block;{% else %}display:none;{% endif %}">
+    <!--     <div class="variant__title"><h3> {{ variant.title }}<strong> Model</strong></h3></div> -->
+        <div class="variant__cf" >
+          <span data-tooltip="Click for more information" data-micromodal-trigger="modal-factorynew">
+            <span class="text--strong">Country of Origin: </span><span class='' >{{ variant.metafields.custom.country_of_origin }}</span>
+          </span>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+    </li>
+  {% endif %}
+{% elsif product.metafields.custom.country_of_origin != blank %}
+  <li>
+    <span class="text--strong">Country of Origin: </span><span class='' >{{ product.metafields.custom.country_of_origin }}</span>
+  </li>
+{%- endif -%}
+{% comment %}
+    {%- else -%}
+    {% if product.metafields.custom.variant_condition contains 'Factory New' %}
+    <span class='' data-tooltip="Click for more information" data-micromodal-trigger="modal-factorynew">Factory New</span>
+    {% endif %}
+    {% if product.metafields.custom.variant_condition contains 'Certified' %}
+    <span class='' data-tooltip="Click for more information" data-micromodal-trigger="modal-refurbished">Certified Refurbished</span>
+    {% endif %}
+    {% endcomment %}

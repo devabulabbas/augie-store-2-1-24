@@ -1,0 +1,242 @@
+{
+  "sections": {
+    "c9c833a9-41da-4ece-bdb5-eb5c9266f08a": {
+      "type": "text-with-icons",
+      "blocks": {
+        "template--14873167724621__c9c833a9-41da-4ece-bdb5-eb5c9266f08a-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-delivery",
+            "title": "Free delivery worldwide",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "template--14873167724621__c9c833a9-41da-4ece-bdb5-eb5c9266f08a-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-returns",
+            "title": "Satisfied or refunded",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "template--14873167724621__c9c833a9-41da-4ece-bdb5-eb5c9266f08a-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-customer-support",
+            "title": "Top-notch support",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        },
+        "template--14873167724621__c9c833a9-41da-4ece-bdb5-eb5c9266f08a-item-4": {
+          "type": "item",
+          "settings": {
+            "icon": "bi-secure-payment",
+            "title": "Secure payments",
+            "content": "<p>Short content about your store<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--14873167724621__c9c833a9-41da-4ece-bdb5-eb5c9266f08a-item-1",
+        "template--14873167724621__c9c833a9-41da-4ece-bdb5-eb5c9266f08a-item-2",
+        "template--14873167724621__c9c833a9-41da-4ece-bdb5-eb5c9266f08a-item-3",
+        "template--14873167724621__c9c833a9-41da-4ece-bdb5-eb5c9266f08a-item-4"
+      ],
+      "settings": {
+        "stack_mobile": false
+      }
+    },
+    "ac966cdb-08c4-4ad6-82bc-21967edc671d": {
+      "type": "custom-liquid",
+      "settings": {
+        "title": "{{ collection.title }}",
+        "include_margins": true,
+        "liquid": "{%- if collection.description != blank -%}    <div>                    <div class=\"rte\">\n                            {{ collection.description }}\n                          <\/div>\n                           \n      <\/div>      {%- endif -%}"
+      }
+    },
+    "7257e820-4924-4ccf-8747-4bc14de3ec39": {
+      "type": "collection-list",
+      "blocks": {
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "stryker",
+            "link": ""
+          }
+        },
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "midmark",
+            "link": ""
+          }
+        },
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "welch-allyn",
+            "link": ""
+          }
+        },
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "edan-instruments",
+            "link": ""
+          }
+        },
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "bovie",
+            "link": ""
+          }
+        },
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": "medela",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-1",
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-2",
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-3",
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-4",
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-5",
+        "template--14873167724621__7257e820-4924-4ccf-8747-4bc14de3ec39-collection-6"
+      ],
+      "settings": {
+        "title": "Explore brands",
+        "link_title": "View all",
+        "link": "shopify:\/\/pages\/brands",
+        "round_images": false,
+        "show_collection_title": true
+      }
+    },
+    "a50f20d7-30ee-40d0-96ed-54c766ba3c8b": {
+      "type": "collection-list",
+      "blocks": {
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "spirometers",
+            "link": ""
+          }
+        },
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "monitors",
+            "link": ""
+          }
+        },
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-4": {
+          "type": "collection",
+          "settings": {
+            "collection": "defibrillators",
+            "link": ""
+          }
+        },
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "diagnostic-sets",
+            "link": ""
+          }
+        },
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-5": {
+          "type": "collection",
+          "settings": {
+            "collection": "ecg-ekg-machines",
+            "link": ""
+          }
+        },
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": "endoscopy",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-2",
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-1",
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-4",
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-3",
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-5",
+        "template--14873167724621__a50f20d7-30ee-40d0-96ed-54c766ba3c8b-collection-6"
+      ],
+      "settings": {
+        "title": "Explore types",
+        "link_title": "View all",
+        "link": "shopify:\/\/collections",
+        "round_images": false,
+        "show_collection_title": true
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "show_collection_image": true,
+        "collapse_collection_description": false,
+        "collection_image_size": "small",
+        "products_per_row": "4",
+        "default_products_per_page": 24,
+        "default_view_layout": "grid",
+        "show_quick_buy": "list",
+        "show_quick_view": "list",
+        "quick_links": "",
+        "quick_links_show_products_count": true,
+        "show_filters": true,
+        "show_filter_color_swatch": true,
+        "open_group_filters_mode": "all_closed"
+      }
+    },
+    "16994310079857e179": {
+      "type": "apps",
+      "blocks": {
+        "b0bd6465-73b2-407d-8cd4-33e928460091": {
+          "type": "shopify:\/\/apps\/product-filters-search\/blocks\/smart_collections\/95672d06-1c4e-4e1b-9368-e84ce1ad6886",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "b0bd6465-73b2-407d-8cd4-33e928460091"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "disabled": true,
+      "settings": {
+        "title": "Recently viewed",
+        "show_quick_buy": false
+      }
+    },
+    "3ad2ae36-4e86-4905-83bf-13397a7e8012": {
+      "type": "custom-html",
+      "settings": {
+        "title": "",
+        "html": "<!-- Fast Simon Product Recommendation Widget START -->\n<div class=\"fast-simon-upsell\" data-title=\"Explore items\" data-layout=\"horizontal\" data-img-ratio=\"1:1\" data-sources=\"related_views,similar_products,related_recently_viewed,related_cart,related_purchase\" style=\"height: 100%;\">‎<\/div>\n<div id=\"template_1\" class=\"fast-simon-upsell\" data-title=\"Your browsing history\" data-layout=\"horizontal\" data-img-ratio=\"1:1\" data-sources=\"related_recently_viewed,related_top_products\" style=\"height: 100%;\">‎<\/div>\n<script src=\"https:\/\/fastsimon-upsell-and-cross-sell.akamaized.net\/fs-recommendations-init.js?uuid=1a0b76ca-32b3-4f11-8f15-da27f469f8c0&amp;store_id=10461086&amp;platform=Shopify\" async=\"\"><\/script>\n<!-- Fast Simon Product Recommendation Widget END -->"
+      }
+    }
+  },
+  "order": [
+    "c9c833a9-41da-4ece-bdb5-eb5c9266f08a",
+    "ac966cdb-08c4-4ad6-82bc-21967edc671d",
+    "7257e820-4924-4ccf-8747-4bc14de3ec39",
+    "a50f20d7-30ee-40d0-96ed-54c766ba3c8b",
+    "main",
+    "16994310079857e179",
+    "recently-viewed-products",
+    "3ad2ae36-4e86-4905-83bf-13397a7e8012"
+  ]
+}

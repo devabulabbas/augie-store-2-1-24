@@ -1,0 +1,58 @@
+<li class='jumpto-container'>
+  <div class="jumpto-container-wrapper">
+  <p id='jumptotext' id="custom-learn-more-anchor"><span class='text--strong'>Learn more:</span> </p>  
+</div>
+</li>
+
+<script>
+  (function(){
+    setTimeout(function(){
+      const tablist = document.querySelector('.easytabs-contents').children;
+      const tabArr = [];
+      for(var i=0;i < tablist.length; i++) {
+        const arrValue = tablist[i];
+        tabArr.push(arrValue);
+      }
+      
+      const buttonArray = [];
+      for (var i=0;i < tabArr.length; i++) {
+        if (tabArr[i].classList.contains('easytabs-active')) {
+          var currentTab = tabArr[i];
+        }
+        let buttonArrayText = tabArr[i].dataset.etHandle.slice(5);
+        buttonArrayText = buttonArrayText.replace(/-/g, ' ');
+        const buttonElement = document.createElement('span');
+        if (i === tabArr.length - 1) {
+          buttonElement.innerHTML = buttonArrayText;
+        } else {
+          buttonElement.innerHTML = buttonArrayText + ", ";
+        }
+        buttonElement.classList.add('link', 'link--accented-reverse');
+        buttonElement.setAttribute("onclick","ga('send', 'event', 'PDP Links', 'click', 'Jump to link');");
+        buttonElement.id = 'tab_' + i.toString();
+        buttonArray.push(buttonElement);
+      }
+      
+      // console.log("buttonArray is " + buttonArray);
+      
+      var jumpToText = document.getElementById('jumptotext');
+      
+      for (var i=0;i < buttonArray.length; i++) {
+        jumpToText.append(buttonArray[i]);
+
+        buttonArray[i].addEventListener("click", function() {
+          currentTab.classList.remove('easytabs-active');
+
+          var newTabIndex = this.id.slice(4);
+          tabArr[newTabIndex].classList.add('easytabs-active');
+          tabArr[newTabIndex].scrollIntoView({ behavior: 'smooth',block: "nearest"});
+          currentTab = tabArr[newTabIndex];
+        });
+      }
+
+      var jumpContainer = document.querySelector('.jumpto-container');
+      jumpContainer.classList.remove('hide');
+      
+    }, 2200);
+  })();
+</script>

@@ -1,0 +1,143 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "92a46acf-2900-4785-b331-29d1e02eab75": {
+      "type": "promotion-list",
+      "blocks": {
+        "template--14854731366477__92a46acf-2900-4785-b331-29d1e02eab75-item-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shutterstock_535084903-min.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "stretch_image": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#112f4c",
+            "title": "Returns Center",
+            "content": "<p>Automated returns<\/p>",
+            "content_position": "top_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#112f4c",
+            "button_text": "Return an Item",
+            "button_link": "https:\/\/returns.mfimedical.com\/#\/"
+          }
+        },
+        "template--14854731366477__92a46acf-2900-4785-b331-29d1e02eab75-item-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shutterstock_1811280388-min.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "stretch_image": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#112f4c",
+            "title": "Exclusive Discounts",
+            "content": "<p>Discounts , coupons & promotions<\/p>",
+            "content_position": "top_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#112f4c",
+            "button_text": "View Discounts",
+            "button_link": "https:\/\/mfimedical.com\/pages\/members"
+          }
+        },
+        "template--14854731366477__92a46acf-2900-4785-b331-29d1e02eab75-item-3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shutterstock_1959570262-min.jpg",
+            "show_overlay": false,
+            "overlay_opacity": 50,
+            "stretch_image": true,
+            "background": "rgba(0,0,0,0)",
+            "text_color": "#112f4c",
+            "title": "Earn Rewards",
+            "content": "<p>Earn points on every order<\/p>",
+            "content_position": "top_left",
+            "button_background": "#ffffff",
+            "button_text_color": "#112f4c",
+            "button_text": "Learn more",
+            "button_link": "https:\/\/mfimedical.com\/pages\/members"
+          }
+        }
+      },
+      "block_order": [
+        "template--14854731366477__92a46acf-2900-4785-b331-29d1e02eab75-item-1",
+        "template--14854731366477__92a46acf-2900-4785-b331-29d1e02eab75-item-2",
+        "template--14854731366477__92a46acf-2900-4785-b331-29d1e02eab75-item-3"
+      ],
+      "settings": {
+        "expand_items": true,
+        "section_size": "small",
+        "stack_mobile": false
+      }
+    },
+    "contact-form": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "form_heading": "",
+        "show_store_info": false,
+        "store_heading": "Find us",
+        "store_info": ""
+      }
+    },
+    "4b4ec30c-f344-4e84-a22b-789622e8291b": {
+      "type": "custom-html",
+      "settings": {
+        "title": "Contact Us",
+        "html": "<div data-gorgias-contact-form=\"container\"><\/div>\n<script defer src=\"https:\/\/contact.gorgias.help\/api\/contact-forms\/loader.js?uid=77kwtakw&amp;locale=en-US\" data-gorgias-contact-form=\"script\"><\/script>"
+      }
+    },
+    "1699445912650e5ed4": {
+      "type": "apps",
+      "blocks": {
+        "ce20ff97-ed1a-49f6-8b6e-fbb85cf39ced": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "115638",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "fbff8c20-9d97-4750-b66d-927eb495f9d8": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "74524",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "037c8a9e-e1f1-417f-874e-ddfa1c361891": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "106088",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "ce20ff97-ed1a-49f6-8b6e-fbb85cf39ced",
+        "fbff8c20-9d97-4750-b66d-927eb495f9d8",
+        "037c8a9e-e1f1-417f-874e-ddfa1c361891"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "92a46acf-2900-4785-b331-29d1e02eab75",
+    "contact-form",
+    "4b4ec30c-f344-4e84-a22b-789622e8291b",
+    "1699445912650e5ed4"
+  ]
+}

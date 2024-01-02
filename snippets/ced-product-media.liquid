@@ -1,0 +1,144 @@
+
+ <link rel="stylesheet" href="{{ 'ced-zoom.css' | asset_url }}">
+
+<style>
+  .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+</style>
+{% assign img_count =0 %}
+{% assign vdo_count =0 %}
+{%  assign img_media = '' %}
+{%  assign vdo_media = '' %}
+{% for media in  product_media%}
+  {%- case media.media_type -%}
+                  {%- when 'image' -%}
+                    {% assign img_count = img_count | plus: 1 %}
+    
+                    {% if img_count == 1 %}
+                        {%  assign img_media = media  %}
+                    {% endif %}
+                  {%- when 'external_video' -%}
+                    {% assign vdo_count = vdo_count | plus: 1 %}
+                    {% if vdo_count == 1 %}
+                        {%  assign vdo_media = media  %}
+                    {% endif %}
+                  {%- when 'video' -%}
+                      {% assign vdo_count = vdo_count | plus: 1 %}
+                      {% if vdo_count == 1 %}
+                        {%  assign vdo_media = media  %}
+                    {% endif %}
+      {%- endcase -%}
+  {% endfor %}
+<div class="tab">
+  {% if img_count >=1 %}
+  <button class="tablinks" onclick="openCity(event, 'ced_modal_image')" id="defaultOpen">Images</button>
+  {% endif %}
+  {% if vdo_count >= 1 %}
+  <button class="tablinks" onclick="openCity(event, 'ced_modal_video')">Videos</button>
+  {% endif %}
+</div>
+<div class="ced_modal_images tabcontent" id="ced_modal_image">
+  <div class="wrapper_images_ced">
+  <div class="main_img_ced_wrap ced_zoom_img_wrap">
+      <img src="{{ img_media | img_url:'500x' }}" class="main_img_ced ced_zoom_img" style="height=500px; width:500px">
+  </div>
+  <div class="ced_modal_img_wrap">
+    <p class="product_title_new">{{ product.title | truncate: 40 }}</p>
+    <div class="inner_child_img">
+    
+{% for media in  product_media%}
+  {%- case media.media_type -%}
+                  {%- when 'image' -%}
+                    <div class="product-gallery__size-limiter" style="max-width: {{ media.width }}px">
+                      {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,500,600,700,800,900,1000,1100,1200', image: media -%}{%- endcapture -%}
+                      {%- assign image_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
+
+                      <div class="aspect-ratio" style="height:100px;width:100px">
+                        <img class="ced_thumbnail_img product-gallery__image lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-zoom="{{ media | img_url: '1600x' }}" data-zoom-width="{{ media.width | at_most: 1600 }}" alt="{{ media_alt | escape }}" data-cedimg={{ media | img_url: '600x' }}>
+
+                        <noscript>
+                          <img src="{{ media | img_url: '800x' }}" alt="{{ media_alt | escape }}">
+                        </noscript>
+                      </div>
+                    </div>
+
+                  
+                {%- endcase -%}
+  {% endfor %}
+  </div>
+  </div>
+  </div>
+</div>
+
+<div class="ced_modal_videos tabcontent" id="ced_modal_video">
+  <div class="video_block_ced">
+    <div class="main_video_ced">
+    {{-vdo_media | external_video_tag: image_size: '500x', loop: section.settings.enable_video_looping ,class:'ced_main_video'-}}
+    </div>
+    <div class="video_wrapper_ced">
+    {% for media in  product_media%}
+    {%- case media.media_type -%}
+    
+    
+    {%- when 'external_video' -%}
+      <div class="wrapper_main_new_ced">
+    <div class="product-gallery__external-video" style="position:relative">
+    <div class="video-wrapper" style="height:100px;width:100px">
+    {{- media | external_video_tag: image_size: '1024x', loop: section.settings.enable_video_looping ,class:'ced_video'-}}
+    </div>
+    
+    <button class="ced_video_btn" style="position: absolute;top: 4px;background: beige;z-index: 99;">play</button>
+    </div>
+    <p class="ced_video_media_new">{{ media.alt }}</p>
+      </div>
+    {%- when 'video' -%}
+    <div class="product-gallery__video">
+    <div class="video-wrapper video-wrapper--native" style="height:100px;width:100px">
+    {{- media | video_tag: image_size: '1024x', controls: true -}}
+    </div>
+    </div>
+    <span class="product-gallery__thumbnail-badge">{% render 'icon', icon: 'media-video-badge' %}</span>
+    {%- endcase -%}
+    {% endfor %}
+    </div>
+  </div>
+</div>
+
+<script>
+
+
+  
+</script>

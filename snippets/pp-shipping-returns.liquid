@@ -1,0 +1,50 @@
+{%- assign selected_variant = product.selected_or_first_available_variant -%}
+
+{%- for tag in product.tags -%}
+{%- if tag contains 'non-returnable' -%}
+{%- assign returnable = false -%}{%- break -%}
+{%- else -%}
+{%- assign returnable = true -%}{%- break -%}
+{%- break -%}
+{%- endif -%}
+{%- endfor -%}
+
+{%- for tag in product.tags -%}
+{%- if tag contains 'non-returnable' -%}
+{%- assign nonreturnable = true -%}{%- break -%}
+{%- endif -%}
+{%- endfor -%}
+
+
+{%- for tag in product.tags -%}
+{%- if tag contains 'LTL' -%}
+{%- assign freight = true -%}{%- break -%}
+{%- endif -%}
+{%- endfor -%}
+
+
+{%- if selected_variant.price > 9999 -%}
+{%- assign shipsfree = true -%}
+{%- else -%}
+{%- assign shipsfree = false -%}
+{%- endif -%}
+
+<div id='pp_belowatc_shipping' {%- if selected_variant.available -%}style='display: block;'{%- else -%}style='display: none'{%- endif -%}>{% render 'variant-package' %}</div>
+
+{%- if freight -%}
+<a class='modal-open-link link--accented-reverse modal-returnpolicy' style='margin-bottom: 0;' href='https://help.mfimedical.com/en-US/return-policy-204649' target="_blank" onclick="ga('send', 'event', 'PDP Links', 'click', 'Return Policy Page');">
+  <span style='font-size: 14px;'>Return Policy</span>
+</a>
+{%- else -%}
+{%- if nonreturnable != true -%}
+<!--   <span>&nbsp; + &nbsp;</span> -->
+<p class='modal-open-link link--accented-reverse modal-returns' style='margin-bottom: 0;' data-micromodal-trigger="modal-returns" onclick="ga('send', 'event', 'PDP Links', 'click', 'Free Returns Modal');">
+  <span style='font-size: 14px;'>Free Returns</span>
+</p>
+{%- else -%}
+<a class='modal-open-link link--accented-reverse modal-returnpolicy' style='margin-bottom: 0;' href='https://help.mfimedical.com/en-US/return-policy-204649' target="_blank" onclick="ga('send', 'event', 'PDP Links', 'click', 'Return Policy Page');">
+  <span style='font-size: 14px;'>Return Policy</span>
+</a>
+{%- endif -%}
+
+{%- endif -%}

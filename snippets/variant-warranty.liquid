@@ -1,0 +1,34 @@
+{%- if product.metafields.custom.warranty == "-" or product.metafields.custom.warranty == blank -%}
+{% assign machine = product.metafields.custom.variant_fields | split: "|" %}
+<div class="variant-custom-fields-wrapper" style='display: inline-block;'>
+  {%- for variant in product.variants -%}
+
+  <div class="variant-custom-fields" data-variant-id="{{ variant.id }}" style="{% if product.selected_or_first_available_variant.id == variant.id %}display:block;{% else %}display:none;{% endif %}">
+<!--     <div class="variant__title"><h3> {{ variant.title }}<strong> Model</strong></h3></div> -->
+    <div class="variant__cf">
+    	{% if machine != blank %}
+    		{% for info in machine %}
+      			{% assign machine_item = info | split: '='%}
+      			{% assign human_name = machine_item[0] %}
+      			{% assign machine_name = machine_item[1] %}
+				{% if variant.metafields.custom[machine_name] != blank %}
+      
+      			{% if machine_name == 'warranty' %}
+          			<span>
+                  		<span style='display: none;'>{{ human_name }}:</span>
+                  		{{ variant.metafields.custom[machine_name] }}
+      				</span>
+      			{% endif %}
+    			{% endif %}
+    		{% endfor %}
+		{% endif %}
+    </div>
+  </div>
+  {%- endfor -%}
+</div>
+
+{%- else -%}
+
+<span>{{ product.metafields.custom.warranty }}</span>
+
+{%- endif -%}

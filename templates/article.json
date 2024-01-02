@@ -1,0 +1,74 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-blog-post",
+      "settings": {
+        "show_category": true,
+        "show_author": false,
+        "show_date": true,
+        "show_share_buttons": true,
+        "show_tags": false,
+        "show_gravatar": true
+      }
+    },
+    "d218f118-5f65-4b60-8a5d-3588649d198a": {
+      "type": "blog-posts",
+      "settings": {
+        "blog": "news",
+        "blog_posts_count": 3,
+        "title": "Blog posts",
+        "link_title": "View all",
+        "show_category": true,
+        "show_author": false,
+        "show_date": true,
+        "show_excerpt": false,
+        "stack_mobile": false
+      }
+    },
+    "17024781761a61b614": {
+      "type": "apps",
+      "blocks": {
+        "ff83a03b-e275-4b2e-9711-909d3b5b83e3": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "115638",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "bcde3348-811a-4c1b-abe9-17f90edcbde9": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "74524",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        },
+        "44be5fcd-aeb6-498f-95c3-fee053a70f06": {
+          "type": "shopify:\/\/apps\/rebuy-personalization-engine\/blocks\/rebuy-widget\/a26ae9b9-933b-40bf-bbc6-bf1220bbc4dc",
+          "settings": {
+            "enabled": true,
+            "id": "106088",
+            "product_id_enabled": true,
+            "collection_id_enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "ff83a03b-e275-4b2e-9711-909d3b5b83e3",
+        "bcde3348-811a-4c1b-abe9-17f90edcbde9",
+        "44be5fcd-aeb6-498f-95c3-fee053a70f06"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "d218f118-5f65-4b60-8a5d-3588649d198a",
+    "17024781761a61b614"
+  ]
+}

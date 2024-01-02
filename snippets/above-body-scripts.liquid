@@ -1,0 +1,45 @@
+{% comment %} REAMAZE SCRIPT {% endcomment %}
+<script defer type="text/javascript">
+    var _support = _support || { 'ui': {}, 'user': {} };
+    _support['account'] = 'mfimedical';
+</script>
+
+
+
+{% comment %} REVIEWS.io floating {% endcomment %}
+<!-- <div id="reviews-io-floating-widget" widget-id="0AtwFOxohUfRb3Yi"
+        store-name="mfi-medical" >
+        </div>
+        <script src='//widget.reviews.io/modern-widgets/floating.js'></script> -->
+
+{% comment %} KLAVIYO {% endcomment %}
+{% render 'klaviyobis' %}
+
+{% comment %} SMILE.io JS {% endcomment %}
+{% render 'smile-initializer' %}
+{% render 'custom-smile' %}
+
+{% comment %} MICRO MODAL JS {% endcomment %}
+{%- render 'js-micro-modal' -%}
+
+<script>
+var all_links = document.querySelectorAll('a');
+for (var i = 0; i < all_links.length; i++){
+       var a = all_links[i];
+       if(a.hostname != location.hostname) {
+               a.rel = 'noopener';
+               a.target = '_blank';
+       }
+}
+</script>
+
+{% unless template.name == "product" or template.name == "cart" or template.name == "collection" or template.name == "index" %}
+<script>
+  document.getElementById("txtPhone").setAttribute("isp_ignore", "true");
+  document.getElementById("txtRemarks").setAttribute("isp_ignore", "true");
+  var inputs = document.querySelectorAll('.quote-custom-field');
+  for(var i = 0; i < inputs.length; i++){
+    inputs[i].setAttribute("isp_ignore", "true");
+  }
+</script>
+{% endunless %}

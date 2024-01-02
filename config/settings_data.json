@@ -1,0 +1,515 @@
+{
+  "current": {
+    "mfi_border_grey": "#efefef",
+    "mfi_light_blue": "#daeeff",
+    "heading_color": "#05182a",
+    "text_color": "#455159",
+    "accent_color": "#0457c8",
+    "link_color": "#0457c8",
+    "border_color": "#e4f6fc",
+    "background": "#fdfdfd",
+    "secondary_background": "#ffffff",
+    "error_color": "#ff0000",
+    "success_color": "#00aa00",
+    "primary_button_background": "#FFB00C",
+    "primary_button_text_color": "#05182a",
+    "secondary_button_background": "#0457c8",
+    "secondary_button_text_color": "#ffffff",
+    "header_background": "#112f4c",
+    "header_text_color": "#ffffff",
+    "header_light_text_color": "#ffb00c",
+    "header_accent_color": "#ffb00c",
+    "footer_background_color": "#f4f7f8",
+    "footer_heading_text_color": "#05182a",
+    "footer_body_text_color": "#455159",
+    "footer_accent_color": "#ffb00c",
+    "product_on_sale_accent": "#ee0000",
+    "product_in_stock_color": "#008a00",
+    "product_low_stock_color": "#ee0000",
+    "product_sold_out_color": "#8a9297",
+    "product_label_1_background": "#008a00",
+    "product_label_2_background": "#00a500",
+    "product_star_color": "#ffbd00",
+    "base_text_font_size": 16,
+    "heading_font": "din_neuzeit_grotesk_n7",
+    "text_font": "helvetica_n4",
+    "underline_links": true,
+    "animation_image_zoom": true,
+    "show_vendor": true,
+    "show_secondary_image": true,
+    "show_reviews_badge": false,
+    "show_discount": true,
+    "discount_mode": "saving",
+    "product_price_position": "after_title",
+    "product_image_size": "natural",
+    "show_color_swatch": false,
+    "show_inventory_quantity": false,
+    "low_inventory_threshold": 0,
+    "cart_type": "page",
+    "cart_empty_button_link": "shopify:\/\/collections\/all",
+    "cart_show_checkout_button": true,
+    "cart_show_free_shipping_threshold": false,
+    "cart_free_shipping_threshold": "50",
+    "social_facebook": "https:\/\/www.facebook.com\/MFIMedicalEquipment\/",
+    "social_twitter": "https:\/\/twitter.com\/mfi_medical?lang=en",
+    "social_pinterest": "",
+    "social_instagram": "",
+    "social_vimeo": "",
+    "social_tumblr": "",
+    "social_youtube": "https:\/\/www.youtube.com\/user\/MFIMedical",
+    "social_linkedin": "https:\/\/www.linkedin.com\/company\/mfi-medical-equipment-inc-",
+    "social_snapchat": "",
+    "social_fancy": "",
+    "favicon": "shopify:\/\/shop_images\/favicon-new-logo_21dd731e-d47e-4bab-806e-47293ffbc485.png",
+    "search_mode": "product,article",
+    "share_image": "",
+    "checkout_header_image": "",
+    "checkout_logo_image": "",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+    "checkout_accent_color": "#00badb",
+    "checkout_button_color": "#00badb",
+    "checkout_error_color": "#ff0000",
+    "sections": {
+      "imans-modals": {
+        "type": "imans-modals",
+        "blocks": {
+          "4e0d1423-f129-4d4d-be80-2f98a391aeee": {
+            "type": "modal",
+            "settings": {
+              "title": "Free Shipping",
+              "modalname": "freeshipping",
+              "content": "<p>Take advantage of our free shipping offer for this item! We offer free shipping on all parcel shipments within the contiguous United States.<\/p>\n<p><\/p>\n<p>For further information, please refer to our <a class=\"link link--accented\" href=\"https:\/\/help.mfimedical.com\/en-US\/shipping-policy-204650\" title=\"https:\/\/help.mfimedical.com\/en-US\/shipping-policy-204650\">Shipping Policy<\/a>.<\/p>",
+              "hidemodalcompletely": false
+            }
+          },
+          "5cb91adc-cf7e-4abf-adc3-b4a2373cc47e": {
+            "type": "modal",
+            "settings": {
+              "title": "Free Returns + Exchanges",
+              "modalname": "returns",
+              "content": "<div class=\"kf-content\" style=\"padding: 20px;\">\n<p>You can take advantage of our free returns policy for this product! Most domestic shipped orders can be returned for free within 30 days of receipt. Returning an item is now more convenient than ever with <a class=\"link link--accented\" href=\"https:\/\/returns.mfimedical.com\/\" title=\"https:\/\/returns.mfimedical.com\/\">MFI Medical’s Online Returns Center<\/a>. You can simply fill out a request through the online portal and ship the items back free of charge.<\/p>\n<p>For further information, please refer to our <a class=\"link link--accented\" href=\"https:\/\/help.mfimedical.com\/en-US\/return-policy-204649\" title=\"https:\/\/help.mfimedical.com\/en-US\/return-policy-204649\">Return Policy<\/a>.<\/p>\n<\/div>",
+              "hidemodalcompletely": false
+            }
+          },
+          "e84e8031-bd67-490e-818e-1eee4f938d9c": {
+            "type": "modal",
+            "settings": {
+              "title": "Dedicated Account Managers",
+              "modalname": "dedicated",
+              "content": "<p>We strive to offer excellent customer service at MFI Medical, which is why we offer all our customers access to dedicated account managers. Our team of knowledgeable account managers is committed to helping you find the perfect product at the best available price. You can rely on them for guidance and support whenever you need it.<\/p>",
+              "hidemodalcompletely": false
+            }
+          },
+          "6c0dce82-fba3-4425-9e6f-df8d0e8fea00": {
+            "type": "modal",
+            "settings": {
+              "title": "Oversized Shipping",
+              "modalname": "freightshipping",
+              "content": "<div>\n<ul>\n    <li>\n        <strong>Freight<\/strong>: For oversized items, the freight cost is $545 per item. The item will arrive secured to a pallet and delivered up to your address. Please note that freight delivery does not include bringing the shipment inside your address, unpacking, or disposing of packing material. You will be responsible for moving the shipment into your address, unpacking, and disposing of packing material.\n    <\/li>\n    <li>\n        <strong>Inside Delivery<\/strong>: If you require inside delivery, the cost is $995 for the first oversized item and $695 for each additional oversized item. This includes unloading, unpacking, disposing of packing material, and placement of your items in the location of your choice.\n    <\/li>\n    <li>\n        <strong>Residential Inside Delivery (Hospital Beds)<\/strong>: For oversized hospital beds shipping to residential addresses, the cost is $1,995 per item. This includes unloading, unpacking, disposing of packing material, and placement of your items in the location of your choice.\n        <ul>\n            <li>Please note that inside delivery does not include training, assembly, or installation. It is your responsibility to ensure that the items can be delivered to the desired location without issue. The carrier is not able to remove old equipment or obstacles.<\/li>\n        <\/ul>\n    <\/li>\n<\/ul>\n<p>For further information, please refer to our <a class=\"link link--accented\" href=\"https:\/\/help.mfimedical.com\/en-US\/shipping-policy-204650\" title=\"https:\/\/help.mfimedical.com\/en-US\/shipping-policy-204650\">Shipping Policy<\/a>.<\/p>\n<\/div>",
+              "hidemodalcompletely": false
+            }
+          },
+          "f44ce843-5ee7-434a-aca4-7ef71662343c": {
+            "type": "modal",
+            "settings": {
+              "title": "Price Match Guarantee",
+              "modalname": "pmg",
+              "content": "<p>Our commitment is to offer the best prices possible for our customers. If you find a lower price for the same product on another online store, please submit a <a class=\"link link--accented\" href=\"https:\/\/help.mfimedical.com\/en-US\/price-match-policy-203261\" target=\"_blank\">Price Match Request<\/a>. We want you to feel confident that you are getting the absolute best price for the item you are purchasing. <\/p>\n<p>If you have already made a purchase from us and you find a lower price elsewhere within 30 days, we will process a credit on your account. If you have not yet made a purchase, we will match and try to beat our competitors' price.<\/p>\n<p>Please note that our Price Match Policy has some limitations. For further information, please refer to our <a class=\"link link--accented\" href=\"https:\/\/help.mfimedical.com\/en-US\/price-match-policy-203261\" target=\"_blank\">Price Match Policy<\/a>.<\/p>",
+              "hidemodalcompletely": false
+            }
+          },
+          "f1801163-c083-4666-b36a-196157e5d724": {
+            "type": "modal",
+            "settings": {
+              "title": "Sales Tax Exemption",
+              "modalname": "taxexempt",
+              "content": "<p>Are you or your business tax exempt? To provide tax exemption, MFI Medical requires specific information from you:<\/p>\n<ul>\n  <li>The territory\/state in which you wish to enroll<\/li>\n  <li>The entity type of your organization<\/li>\n  <li>Your organization's address<\/li>\n  <li>Your exemption numbers or exemption form (if applicable)<\/li>\n<\/ul>\n<h3 style=\"font-size: 20px;font-weight: bold;\">Request Tax Exemption or Tax Refund<\/h3>\n<p>To request tax exemption or a tax refund and to access full details such as states and territories subject to tax, documentation requirements, federal government, and GSA purchases, please visit our <a class=\"link link--accented\" href=\"https:\/\/help.mfimedical.com\/en-US\/sales-tax-&amp;-exemption-policy-203263\" title=\"https:\/\/help.mfimedical.com\/en-US\/sales-tax-&amp;-exemption-policy-203263\">Sales Tax &amp; Exemption Policy Page<\/a>. Once we have reviewed your information, we will email you confirmation within 1-2 business days.<\/p>",
+              "hidemodalcompletely": false
+            }
+          },
+          "c33355be-4428-4f01-8464-eda15d612825": {
+            "type": "modal",
+            "settings": {
+              "title": "Estimated Delivery",
+              "modalname": "delivery",
+              "content": "<p>\nDelivery estimates are calculated by adding the estimated handling and shipping time.<\/p><p>For further information, please refer to our <a href=\"https:\/\/help.mfimedical.com\/en-US\/shipping-policy-204650\" class=\"link link--accented\" target=\"_blank\">Shipping Policy<\/a>.\n<\/p>",
+              "hidemodalcompletely": false
+            }
+          },
+          "a2c6ade2-9b4c-4bb8-948c-d293ad6b8e87": {
+            "type": "modal",
+            "settings": {
+              "title": "Warranty Policy",
+              "modalname": "warranty",
+              "content": "<div class=\"body\">\n        <p>Warranty coverage varies depending on the product, its condition (Factory New, Factory Refurbished, and Certified Refurbished), and the manufacturer.<\/p>\n\n<ul>\n<li>\n<strong>Factory New Items<\/strong> are covered by the manufacturer's warranty. All warranty claims must be processed through the original manufacturer. However, MFI is available to assist with any manufacturer warranty claims.<\/li>\n<li>\n<strong>Factory Refurbished Items<\/strong> are also covered by the manufacturer's warranty, and all warranty claims must be processed through the original manufacturer. MFI is available to assist with any manufacturer warranty claims.<\/li>\n<li>\n<strong>Certified Refurbished Items<\/strong> are covered by the MFI Medical warranty. To make a warranty claim, please submit an <a href=\"https:\/\/help.mfimedical.com\/en-US\/warranty-policy-204651\" class=\"link link--accented\" target=\"_blank\">online service ticket request<\/a>.\n<ul>\n<li>After the warranty period has expired, MFI provides free telephonic technical support.<\/li>\n<\/ul>\n<\/li>\n<\/ul>\n<p>Kindly note that shipping charges are usually not covered under warranty.<\/p>\n<p>For further information, please refer to our <a href=\"https:\/\/help.mfimedical.com\/en-US\/warranty-policy-204651\" class=\"link link--accented\" target=\"_blank\">Warranty Policy<\/a>.\n\n      <\/p>\n<\/div>",
+              "hidemodalcompletely": false
+            }
+          },
+          "2e15a9e1-0a37-42b5-98ac-b0e52eb47396": {
+            "type": "modal",
+            "settings": {
+              "title": "Earn Points on Orders",
+              "modalname": "earnpoints",
+              "content": "<p>At MFI Medical, you can earn points with every purchase you make.<\/p>\n<p>These points can be redeemed at checkout for cash savings. Gold VIP members receive 1 point for every dollar spent, while Platinum VIP members receive 2 points for every dollar spent. Diamond VIP members receive 3 points for every dollar spent.<\/p>\n<p><a href=\"https:\/\/mfimedical.com\/account\/register\" class=\"color-link\" target=\"_blank\">Create your online account today<\/a> and get 250 points just for signing up!<\/p>",
+              "hidemodalcompletely": false
+            }
+          },
+          "bdffa5f0-45c9-4d77-9222-2a143288affb": {
+            "type": "modal",
+            "settings": {
+              "title": "Certified Refurbished Items",
+              "modalname": "refurbished",
+              "content": "<p>MFI Medical's Certified Refurbished equipment has been expertly restored, thoroughly tested, and internally certified to look and function like new. This includes comprehensive diagnostic testing, as well as the replacement of parts and components where necessary.<\/p>\n<p>When you purchase a Certified Refurbished piece of equipment, you receive the MFI Certified Guarantee. This means that if the product does not function as expected, you are eligible for a replacement or refund within 30 days of receipt. Additionally, you have access to MFI's team of BioMed engineers for technical support and troubleshooting.<\/p>\n<p>For further information, please refer to our <a class=\"link link--accented\" href=\"https:\/\/help.mfimedical.com\/en-US\/certified-refurbished-policy-203270\" target=\"_blank\">Certified Refurbished Policy<\/a>.<\/p>",
+              "hidemodalcompletely": false
+            }
+          },
+          "6fb94736-e70e-45f3-9504-24c2dcb078c0": {
+            "type": "modal",
+            "settings": {
+              "title": "Factory New Items",
+              "modalname": "factorynew",
+              "content": "<p>Factory New items are brand new and come with a manufacturer's warranty. They may be dropshipped directly from the manufacturer's factory.<\/p>",
+              "hidemodalcompletely": false
+            }
+          },
+          "39c23a7d-f961-4e27-aaf7-596556092f67": {
+            "type": "modal",
+            "settings": {
+              "title": "Current stock of an item",
+              "modalname": "stockitem",
+              "content": "The displayed information indicates the present stock level of this item. Additional quantity is available and may have an extended estimated delivery range. We will provide you with regular updates throughout the order process.",
+              "hidemodalcompletely": false
+            }
+          }
+        },
+        "block_order": [
+          "4e0d1423-f129-4d4d-be80-2f98a391aeee",
+          "5cb91adc-cf7e-4abf-adc3-b4a2373cc47e",
+          "e84e8031-bd67-490e-818e-1eee4f938d9c",
+          "6c0dce82-fba3-4425-9e6f-df8d0e8fea00",
+          "f44ce843-5ee7-434a-aca4-7ef71662343c",
+          "f1801163-c083-4666-b36a-196157e5d724",
+          "c33355be-4428-4f01-8464-eda15d612825",
+          "a2c6ade2-9b4c-4bb8-948c-d293ad6b8e87",
+          "2e15a9e1-0a37-42b5-98ac-b0e52eb47396",
+          "bdffa5f0-45c9-4d77-9222-2a143288affb",
+          "6fb94736-e70e-45f3-9504-24c2dcb078c0",
+          "39c23a7d-f961-4e27-aaf7-596556092f67"
+        ],
+        "settings": {
+          "background_color": "#ffffff"
+        }
+      }
+    },
+    "content_for_index": [
+
+    ],
+    "blocks": {
+      "16662536352595574465": {
+        "type": "shopify:\/\/apps\/product-filters-search\/blocks\/autocomplete\/95672d06-1c4e-4e1b-9368-e84ce1ad6886",
+        "disabled": false,
+        "settings": {
+          "path": "\/pages\/search-results",
+          "new_jquery": true
+        }
+      },
+      "10384935893930344104": {
+        "type": "shopify:\/\/apps\/seoant-redirects\/blocks\/brokenlink-404\/cc7b1996-e567-42d0-8862-356092041863",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "14082181514032464150": {
+        "type": "shopify:\/\/apps\/quote-snap-hide-price-b2b\/blocks\/omgrfq_script\/5f4ac0e6-8a57-4f3d-853e-0194eab86273",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "11724500921838622758": {
+        "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "17151115064775110295": {
+        "type": "shopify:\/\/apps\/recharge-subscriptions\/blocks\/recharge-theme\/371eed76-0b44-4869-9813-730372ea378e",
+        "disabled": false,
+        "settings": {
+          "color_brand": "#467C99",
+          "contrast_color": "#FFFFFF",
+          "color_brand_secondary": "#467C99",
+          "corners": "8px",
+          "app_background": "#f9f8f4",
+          "app_container": 1200,
+          "app_vertical_padding": 32,
+          "images_aspect_ratio": "1",
+          "cards_background": "#FFFFFF",
+          "cards_border_color": "rgba(0,0,0,0)"
+        }
+      },
+      "855628211100114053": {
+        "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "6174324309569838175": {
+        "type": "shopify:\/\/apps\/smile-loyalty-rewards\/blocks\/smile-shopify-app\/2fae4e25-1841-4ea2-bc02-bd548478c4f6",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "12120936241911852800": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": true,
+        "settings": {
+          "position": "right"
+        }
+      },
+      "14060646107696862457": {
+        "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "12486543537261954860": {
+        "type": "shopify:\/\/apps\/conversios-all-in-one-pixel\/blocks\/app-embed\/cd4f446b-5a91-41c6-9c16-9ac519de9483",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "17987146178959213818": {
+        "type": "shopify:\/\/apps\/conversios-all-in-one-pixel\/blocks\/app-embed-body\/cd4f446b-5a91-41c6-9c16-9ac519de9483",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
+  },
+  "presets": {
+    "Metal": {
+      "heading_color": "#1e2d7d",
+      "text_color": "#677279",
+      "accent_color": "#00badb",
+      "link_color": "#00badb",
+      "border_color": "#e1e3e4",
+      "background": "#f3f5f6",
+      "secondary_background": "#ffffff",
+      "error_color": "#ff0000",
+      "success_color": "#00aa00",
+      "primary_button_background": "#00badb",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#1e2d7d",
+      "secondary_button_text_color": "#ffffff",
+      "header_background": "#1e2d7d",
+      "header_text_color": "#ffffff",
+      "header_light_text_color": "#a3afef",
+      "header_accent_color": "#00badb",
+      "product_on_sale_accent": "#ee0000",
+      "product_in_stock_color": "#008a00",
+      "product_low_stock_color": "#ee0000",
+      "product_sold_out_color": "#8a9297",
+      "product_label_1_background": "#008a00",
+      "product_label_2_background": "#00a500",
+      "product_star_color": "#ffbd00",
+      "footer_background_color": "#f3f5f6",
+      "footer_heading_text_color": "#1e2d7d",
+      "footer_body_text_color": "#677279",
+      "footer_accent_color": "#00badb",
+      "base_text_font_size": 16,
+      "heading_font": "din_next_n5",
+      "text_font": "din_next_n4",
+      "underline_links": true,
+      "animation_image_zoom": true,
+      "search_mode": "product,article",
+      "show_vendor": true,
+      "show_secondary_image": true,
+      "product_price_position": "after_title",
+      "product_image_size": "natural",
+      "show_discount": true,
+      "discount_mode": "saving",
+      "show_color_swatch": false,
+      "show_inventory_quantity": false,
+      "low_inventory_threshold": 0,
+      "show_reviews_badge": false,
+      "cart_type": "drawer",
+      "cart_empty_button_link": "shopify:\/\/collections\/all",
+      "cart_show_checkout_button": true,
+      "cart_show_free_shipping_threshold": false,
+      "cart_free_shipping_threshold": "50",
+      "share_image": "",
+      "social_facebook": "",
+      "social_twitter": "",
+      "social_pinterest": "",
+      "social_instagram": "",
+      "social_vimeo": "",
+      "social_tumblr": "",
+      "social_youtube": "",
+      "social_linkedin": "",
+      "social_snapchat": "",
+      "social_fancy": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#fafafa",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#00badb",
+      "checkout_button_color": "#00badb",
+      "checkout_error_color": "#ff0000"
+    },
+    "Wood": {
+      "heading_color": "#3a2a2f",
+      "text_color": "#3a2a2f",
+      "accent_color": "#ff6128",
+      "link_color": "#ff6128",
+      "border_color": "#e7e2de",
+      "background": "#f7f4f2",
+      "secondary_background": "#ffffff",
+      "error_color": "#f71b1b",
+      "success_color": "#48b448",
+      "primary_button_background": "#ff6128",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#3a2a2f",
+      "secondary_button_text_color": "#ffffff",
+      "header_background": "#3a2a2f",
+      "header_text_color": "#ffffff",
+      "header_light_text_color": "#e9e2dd",
+      "header_accent_color": "#ff6128",
+      "product_on_sale_accent": "#ee0000",
+      "product_in_stock_color": "#008a00",
+      "product_low_stock_color": "#ee0000",
+      "product_sold_out_color": "#d1d1d4",
+      "product_label_1_background": "#ff6128",
+      "product_label_2_background": "#a95ebe",
+      "product_star_color": "#ffb647",
+      "footer_background_color": "#f7f4f2",
+      "footer_heading_text_color": "#3a2a2f",
+      "footer_body_text_color": "#3a2a2f",
+      "footer_accent_color": "#ff6128",
+      "base_text_font_size": 15,
+      "heading_font": "itc_avant_garde_gothic_n5",
+      "text_font": "basic_commercial_n4",
+      "underline_links": true,
+      "animation_image_zoom": true,
+      "search_mode": "product,article,page",
+      "show_vendor": true,
+      "show_secondary_image": true,
+      "show_discount": true,
+      "discount_mode": "percentage",
+      "product_price_position": "after_title",
+      "product_image_size": "square",
+      "show_color_swatch": false,
+      "show_inventory_quantity": true,
+      "low_inventory_threshold": 1,
+      "show_reviews_badge": false,
+      "cart_type": "drawer",
+      "cart_empty_button_link": "shopify:\/\/collections\/all",
+      "cart_show_checkout_button": true,
+      "cart_show_free_shipping_threshold": true,
+      "cart_free_shipping_threshold": "50",
+      "checkout_logo_position": "center",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#f7f4f2",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#ff6128",
+      "checkout_button_color": "#ff6128",
+      "checkout_error_color": "#f71b1b"
+    },
+    "Fabric": {
+      "heading_color": "#222021",
+      "text_color": "#616161",
+      "accent_color": "#cb1836",
+      "link_color": "#cb1836",
+      "border_color": "#e8e8e8",
+      "background": "#f5f5f5",
+      "secondary_background": "#ffffff",
+      "error_color": "#cf0e0e",
+      "success_color": "#1c7b36",
+      "primary_button_background": "#cb1836",
+      "primary_button_text_color": "#ffffff",
+      "secondary_button_background": "#222021",
+      "secondary_button_text_color": "#ffffff",
+      "header_background": "#222021",
+      "header_text_color": "#ffffff",
+      "header_light_text_color": "#e8e8e8",
+      "header_accent_color": "#cb1836",
+      "footer_background_color": "#222021",
+      "footer_heading_text_color": "#ffffff",
+      "footer_body_text_color": "#ffffff",
+      "footer_accent_color": "#cb1836",
+      "product_on_sale_accent": "#cf0e0e",
+      "product_in_stock_color": "#1c7b36",
+      "product_low_stock_color": "#cf0e0e",
+      "product_sold_out_color": "#8a9297",
+      "product_label_1_background": "#3f6ab1",
+      "product_label_2_background": "#8a44ae",
+      "product_star_color": "#ffbd00",
+      "base_text_font_size": 16,
+      "heading_font": "avenir_next_n7",
+      "text_font": "avenir_next_n5",
+      "underline_links": true,
+      "animation_image_zoom": true,
+      "search_mode": "product,article",
+      "show_vendor": true,
+      "show_secondary_image": true,
+      "show_discount": true,
+      "discount_mode": "percentage",
+      "product_price_position": "before_title",
+      "product_image_size": "square",
+      "show_color_swatch": true,
+      "show_inventory_quantity": true,
+      "low_inventory_threshold": 2,
+      "show_reviews_badge": true,
+      "cart_type": "drawer",
+      "cart_empty_button_link": "shopify:\/\/collections\/all",
+      "cart_show_checkout_button": true,
+      "cart_show_free_shipping_threshold": true,
+      "cart_free_shipping_threshold": "49",
+      "social_facebook": "",
+      "social_twitter": "",
+      "social_pinterest": "",
+      "social_instagram": "",
+      "social_vimeo": "",
+      "social_tumblr": "",
+      "social_youtube": "",
+      "social_linkedin": "",
+      "social_snapchat": "",
+      "social_fancy": "",
+      "favicon": "",
+      "checkout_header_image": "",
+      "checkout_logo_image": "",
+      "checkout_logo_position": "left",
+      "checkout_logo_size": "medium",
+      "checkout_body_background_image": "",
+      "checkout_body_background_color": "#fff",
+      "checkout_input_background_color_mode": "white",
+      "checkout_sidebar_background_image": "",
+      "checkout_sidebar_background_color": "#f5f5f5",
+      "checkout_heading_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_body_font": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
+      "checkout_accent_color": "#cb1836",
+      "checkout_button_color": "#cb1836",
+      "checkout_error_color": "#ff0000"
+    }
+  }
+}

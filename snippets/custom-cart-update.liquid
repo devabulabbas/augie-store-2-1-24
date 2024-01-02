@@ -1,0 +1,288 @@
+
+{%   for item in cart.items %}
+
+{%- if item.product.metafields.custom.variant_leadtimeinteger != blank -%}
+{%- assign selected_variant = item.product -%}
+<script src="{{ 'moment.js' | asset_url }}" defer></script>
+
+
+<script type="lazyloadscript">
+
+      
+  (function(){
+    var date = moment();
+    var holidays = ['2020-01-01', '2020-01-20', '2020-02-17', '2020-05-25',  '2020-07-03', '2020-09-07', '2020-11-26', '2020-11-27', '2020-12-25']; // Can override CMS dates by manually inputing dates here
+
+    var range = "";
+    var parcelrange = 7;
+    var freightrange = 14;
+    
+    //var id = variant_leadtime_{{ selected_variant.id }};
+    var standardShip = {{ item.product.metafields.custom.variant_leadtimeinteger }} + 1;
+    // console.log("standardShip = " + standardShip);
+
+    if (standardShip < 7) {
+      range = 9;
+      {% for tag in item.product.tags %}
+      {% if tag contains 'LTL' %}
+      range = freightrange;
+      {% break %}{% endif %}
+      {% endfor %}
+
+      // console.log("actual range = " + range);
+
+    } else if (standardShip >= 7 && standardShip < 8) {
+      range = parcelrange;
+      {% for tag in item.product.tags %}
+      {% if tag contains 'LTL' %}
+      range = freightrange;
+      {% break %}{% endif %}
+      {% endfor %}
+
+      // console.log("actual range = " + range);
+
+    } else if (standardShip >= 8 && standardShip < 23)  {
+      range = parcelrange;
+      {% for tag in item.product.tags %}
+      {% if tag contains 'LTL' %}
+      range = freightrange;
+      {% break %}{% endif %}
+      {% endfor %}
+
+      // console.log("actual range = " + range);
+
+    } else if (standardShip >= 23 && standardShip < 70) {
+      range = parcelrange;
+      {% for tag in item.product.tags %}
+      {% if tag contains 'LTL' %}
+      range = freightrange;
+      {% break %}{% endif %}
+      {% endfor %}
+
+      // console.log("actual range = " + range);
+
+    } else if (standardShip >= 70 && standardShip <= 106) {
+//       standardShip = 70
+      range = parcelrange;
+      {% for tag in item.product.tags %}
+      {% if tag contains 'LTL' %}
+      range = freightrange;
+      {% break %}{% endif %}
+      {% endfor %}
+
+      // console.log("actual range = " + range);
+
+    } else {
+      range = 50;
+
+    };
+
+    var standardDate = addDays(date, standardShip); // -1 so that we get the date of the last shipping day not the day after
+
+    var endStandardRange = addDays(standardDate, range);   
+
+    var formatStartRange = standardDate.format('MMM Do');
+    var formatEndRange = endStandardRange.format('MMM Do');
+
+    var actualEtd = formatStartRange + " to " + formatEndRange;
+    
+  var bn = '{{ item.key }}'
+                                                             
+    $.ajax({
+        type: 'POST',
+        url: '/cart/change.js',
+        data: {
+        properties:{
+        'Estimated Delivery':actualEtd
+        },
+        id: bn
+        },
+        dataType: 'json',
+        success: function(data) {
+          console.log(actualEtd)
+        }
+    });
+
+
+    function addDays(date, days) {
+      date = moment(date); // get new instance of date
+      while (days > 0) {
+        date = date.add(1, 'days');
+        var isodate = date.format('YYYY-MM-DD');
+
+        // decrease "days" only if it's a sunday or holiday        
+        if (
+
+            $.inArray(isodate, holidays) == -1) {  
+          days -= 1;
+
+
+        }
+
+      }
+      //alert(date.format('YYYY-MM-DD'));
+      return date;
+    };
+  })();
+</script>
+
+{%- else -%}
+  
+<script src="{{ 'moment.js' | asset_url }}"></script>
+
+{%- assign selected_variant = item.variant -%}
+{%- assign machine = product.metafields.custom.variant_fields | split: "|" -%}
+
+  {%- assign variant = item.variant -%}
+
+  
+      {% if machine != blank %}
+      {% for info in machine %}
+      {% assign machine_item = info | split: '='%}
+      {% assign human_name = machine_item[0] %}
+      {% assign machine_name = machine_item[1] %}
+        {% endfor %}
+        
+      {% if item.variant.metafields.custom.variant_leadtimeinteger != blank %}
+      
+           
+
+     
+
+      <script type="lazyloadscript">
+        
+        (function(){
+          var date = moment();
+          var holidays = ['2020-01-01', '2020-01-20', '2020-02-17', '2020-05-25',  '2020-07-03', '2020-09-07', '2020-11-26', '2020-11-27', '2020-12-25']; // Can override CMS dates by manually inputing dates here
+        
+          var range = "";
+          var parcelrange = 7;
+          var freightrange = 14;
+          
+          var standardShip = {{ item.variant.metafields.custom.variant_leadtimeinteger }} + 1;
+        
+        
+
+          if (standardShip < 7) {
+            range = 9;
+            {% for tag in item.product.tags %}
+            {% if tag contains 'LTL' %}
+            range = freightrange;
+            {% break %}{% endif %}
+            {% endfor %}
+            
+            // console.log("actual range = " + range);
+
+          } else if (standardShip >= 7 && standardShip < 8) {
+//             range = 6;
+            range = parcelrange;
+            {% for tag in item.product.tags %}
+            {% if tag contains 'LTL' %}
+            range = freightrange;
+            {% break %}{% endif %}
+            {% endfor %}
+            
+            // console.log("actual range = " + range);
+
+          } else if (standardShip >= 8 && standardShip < 23)  {
+//             range = 13;
+            range = parcelrange;
+            {% for tag in item.product.tags %}
+            {% if tag contains 'LTL' %}
+            range = freightrange;
+            {% break %}{% endif %}
+            {% endfor %}
+            
+            // console.log("actual range = " + range);
+
+          } else if (standardShip >= 23 && standardShip < 70) {
+//             range = 20;
+            range = parcelrange;
+            {% for tag in item.product.tags %}
+            {% if tag contains 'LTL' %}
+            range = freightrange;
+            {% break %}{% endif %}
+            {% endfor %}
+            
+            // console.log("actual range = " + range);
+
+          } else if (standardShip >= 70 && standardShip <= 106) {
+            standardShip = 70
+//             range = 40;
+            range = parcelrange;
+            {% for tag in item.product.tags %}
+            {% if tag contains 'LTL' %}
+            range = freightrange;
+            {% break %}{% endif %}
+            {% endfor %}
+            
+            // console.log("actual range = " + range);
+
+          } else {
+            range = 50;
+
+          };
+
+          var standardDate = addDays(date, standardShip); // -1 so that we get the date of the last shipping day not the day after
+
+          var endStandardRange = addDays(standardDate, range);   
+
+          var formatStartRange = standardDate.format('MMM Do');
+          var formatEndRange = endStandardRange.format('MMM Do');
+
+          
+          var actualEtd = formatStartRange + " to " + formatEndRange;
+        
+          
+   var bnv = '{{ item.key }}'
+        
+                                                  
+           $.ajax({
+        type: 'POST',
+        url: '/cart/change.js',
+        data: {
+        properties:{
+        'Estimated Delivery':actualEtd
+        },
+        id: bnv
+        },
+        dataType: 'json',
+        success: function(data) {
+          console.log(actualEtd)
+        }
+    });
+
+          function addDays(date, days) {
+            date = moment(date); // get new instance of date
+            while (days > 0) {
+              date = date.add(1, 'days');
+              var isodate = date.format('YYYY-MM-DD');
+
+              // decrease "days" only if it's a sunday or holiday        
+              if ( 
+
+                  $.inArray(isodate, holidays) == -1) {  
+                days -= 1;
+
+
+              }
+
+            }
+            //alert(date.format('YYYY-MM-DD'));
+            return date;
+          };
+        })();
+      </script>
+
+      
+      
+      {% endif %}
+      
+      {% endif %}
+    
+  
+
+
+{%- endif -%}
+
+  {% endfor %}

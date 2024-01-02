@@ -1,0 +1,68 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "product_meta": {
+          "type": "product_meta",
+          "settings": {
+          }
+        },
+        "variant_selector": {
+          "type": "variant_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "product_meta",
+        "variant_selector",
+        "buy_buttons",
+        "description"
+      ],
+      "settings": {
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+      }
+    },
+    "16320114352b37af49": {
+      "type": "apps",
+      "blocks": {
+        "652166fd-08a0-4335-aa1d-d9bdcb61685e": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/review_widget\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "652166fd-08a0-4335-aa1d-d9bdcb61685e"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "16320114352b37af49",
+    "product-recommendations",
+    "recently-viewed-products"
+  ]
+}

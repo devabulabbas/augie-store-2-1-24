@@ -1,0 +1,63 @@
+<!-- /snippets/social-sharing.liquid -->
+{%- assign share_url = shop.url | append: product.url -%}
+<ul class="social-sharing">
+
+    <li>
+      <a class="mobile-share-buttons__item mobile-share-buttons__item--mail" href="mailto:?&subject={{ product.title | escape }}&body={{ share_url }}" aria-label="{{ 'general.social.email_share' | t }}">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+  <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
+</svg>
+    <span class="share-title">Share By Email</span>
+              </a>
+    </li>
+  
+    <li>
+      <a target="_blank" href="//www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}" class="btn btn--small btn--share share-facebook">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve"><g>
+        <path style="fill:#3B5998;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659   S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+        <path style="fill:#FFFFFF;" d="M163.394,100.277h18.772v-27.73h-22.067v0.1c-26.738,0.947-32.218,15.977-32.701,31.763h-0.055   v13.847h-18.207v27.156h18.207v72.793h27.439v-72.793h22.477l4.342-27.156h-26.81v-8.366   C154.791,104.556,158.341,100.277,163.394,100.277z"/></g>
+        <g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+        </svg> 
+        <span class="share-title" aria-hidden="true">{{ 'general.social.facebook_share' | t }}</span>
+        <span class="visually-hidden">{{ 'general.social.alt_text.facebook_share' | t }}</span>
+      </a>
+    </li>
+  
+
+  
+    <li>
+      <a target="_blank" href="//twitter.com/share?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}" class="btn btn--small btn--share share-twitter">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 112.197 112.197" style="enable-background:new 0 0 112.197 112.197;" xml:space="preserve"><g>
+        <circle style="fill:#55ACEE;" cx="56.099" cy="56.098" r="56.098"/><g>
+        <path style="fill:#F1F2F2;" d="M90.461,40.316c-2.404,1.066-4.99,1.787-7.702,2.109c2.769-1.659,4.894-4.284,5.897-7.417    c-2.591,1.537-5.462,2.652-8.515,3.253c-2.446-2.605-5.931-4.233-9.79-4.233c-7.404,0-13.409,6.005-13.409,13.409    c0,1.051,0.119,2.074,0.349,3.056c-11.144-0.559-21.025-5.897-27.639-14.012c-1.154,1.98-1.816,4.285-1.816,6.742    c0,4.651,2.369,8.757,5.965,11.161c-2.197-0.069-4.266-0.672-6.073-1.679c-0.001,0.057-0.001,0.114-0.001,0.17    c0,6.497,4.624,11.916,10.757,13.147c-1.124,0.308-2.311,0.471-3.532,0.471c-0.866,0-1.705-0.083-2.523-0.239    c1.706,5.326,6.657,9.203,12.526,9.312c-4.59,3.597-10.371,5.74-16.655,5.74c-1.08,0-2.15-0.063-3.197-0.188    c5.931,3.806,12.981,6.025,20.553,6.025c24.664,0,38.152-20.432,38.152-38.153c0-0.581-0.013-1.16-0.039-1.734    C86.391,45.366,88.664,43.005,90.461,40.316L90.461,40.316z"/>
+        </g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        <span class="share-title" aria-hidden="true">{{ 'general.social.twitter_share' | t }}</span>
+        <span class="visually-hidden">{{ 'general.social.alt_text.twitter_share' | t }}</span>
+      </a>
+    </li>
+  
+
+  {% comment %}
+    <li>
+      <a target="_blank" href="//pinterest.com/pin/create/button/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | img_url: '1024x1024' }}&amp;description={{ share_title | url_param_escape }}" class="btn btn--small btn--share share-pinterest">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 291.319 291.319" style="enable-background:new 0 0 291.319 291.319;" xml:space="preserve"><g>
+        <path style="fill:#C8232C;" d="M145.659,0c80.45,0,145.66,65.219,145.66,145.66c0,80.45-65.21,145.659-145.66,145.659   S0,226.109,0,145.66C0,65.219,65.21,0,145.659,0z"/>
+        <path style="fill:#FFFFFF;" d="M150.066,63.781c-51.327,0-77.19,35.632-77.19,65.337c0,17.989,7.028,33.993,22.122,39.956   c2.467,0.974,4.698,0.036,5.408-2.613l2.203-8.403c0.728-2.613,0.446-3.541-1.548-5.826c-4.361-4.962-7.128-11.398-7.128-20.511   c0-26.428,20.42-50.089,53.175-50.089c29.014,0,44.945,17.161,44.945,40.075c0,30.152-13.783,55.606-34.248,55.606   c-11.289,0-19.755-9.04-17.042-20.156c3.241-13.237,9.541-27.539,9.541-37.107c0-8.548-4.743-15.704-14.575-15.704   c-11.553,0-20.829,11.571-20.829,27.074c0,9.878,3.45,16.551,3.45,16.551l-13.901,56.998c-4.124,16.906-0.61,37.644-0.319,39.738   c0.182,1.238,1.821,1.529,2.567,0.601c1.065-1.347,14.821-17.798,19.5-34.239c1.329-4.652,7.602-28.75,7.602-28.75   c3.751,6.946,14.721,13.046,26.383,13.046c34.712,0,58.273-30.652,58.273-71.674C218.444,92.676,191.315,63.781,150.066,63.781z"/>
+        </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        <span class="share-title" aria-hidden="true">{{ 'general.social.pinterest_share' | t }}</span>
+        <span class="visually-hidden">{{ 'general.social.alt_text.pinterest_share' | t }}</span>
+      </a>
+    </li>
+  {% endcomment %}
+    <li>
+      <a>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 162.656 162.656" style="enable-background:new 0 0 162.656 162.656;" xml:space="preserve"><g>
+	<path d="M151.764,10.894c-14.522-14.522-38.152-14.525-52.676-0.008l0.003,0.003L76.112,33.872l10.607,10.605l22.983-22.988   l-0.002-0.002c8.678-8.663,22.785-8.658,31.457,0.014c8.673,8.672,8.672,22.786,0,31.461l-34.486,34.484   c-4.201,4.202-9.787,6.516-15.729,6.516c-5.942,0-11.529-2.314-15.73-6.516L64.605,98.052c7.035,7.035,16.389,10.91,26.338,10.91   c9.949,0,19.303-3.875,26.335-10.91l34.487-34.484C166.284,49.043,166.284,25.413,151.764,10.894z"/>
+	<path d="M52.96,141.162L52.96,141.162c-8.675,8.67-22.788,8.668-31.461-0.005c-8.673-8.675-8.673-22.791-0.001-31.465L55.98,75.21   c8.675-8.674,22.789-8.674,31.462,0L98.05,64.604c-14.524-14.523-38.154-14.524-52.676,0L10.89,99.086   c-14.519,14.523-14.519,38.154,0.001,52.678c7.263,7.262,16.801,10.893,26.341,10.892c9.536,0,19.074-3.629,26.333-10.887   l0.002-0.001l22.984-22.99l-10.608-10.606L52.96,141.162z"/>
+      </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+        <button class="copy_link_btn_ced">Copy Link</button>
+      </a>
+      
+    </li>
+
+</ul>
