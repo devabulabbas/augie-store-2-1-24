@@ -3,40 +3,6 @@
     "promotions": {
       "type": "promotions-page-template",
       "blocks": {
-        "6bbd81ad-f107-4b43-9d93-f633a58869d0": {
-          "type": "value",
-          "settings": {
-            "hide": false,
-            "title": "Bovie Surgi-Center PRO Promotion",
-            "collection": "bovie",
-            "promo_details": "Purchase a Bovie Surgi-Center PRO (A2350) electrosurgical generator and receive  the following items for FREE. (Receive One box of each single- \nuse accessory: ES20T, ES58T, ESREC, ES01T, ES02T, ES03T, ESP1, ES04T.) ($929 value). Applies to purchases made between October 1 - December 31, 2023.",
-            "redemption": "Online redemption form must be\nsubmitted by January 31, 2024.\nPlease allow 4-6 weeks for delivery.",
-            "promocode": "",
-            "expiration": "January 31, 2024",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/symmetrysurgical.com\/q4-medical-promotion",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
-        "260b3d5f-cff6-4a1e-a739-082e218d88ec": {
-          "type": "value",
-          "settings": {
-            "hide": false,
-            "title": "Bovie OR PRO Promotion",
-            "collection": "bovie",
-            "promo_details": "Purchase a Bovie OR PRO (A3350) electrosurgical generator and receive  the following items for FREE. (Receive One box of each single- \nuse accessory: ESP1, ES07T, ES20T, ES58T, ESREC, ES01T, ES02T, ES03T, ES04T, ES06T.) ($1,173 value). Applies to purchases made between October 1 - December 31, 2023.",
-            "redemption": "Online redemption form must be\nsubmitted by January 31, 2024.\nPlease allow 4-6 weeks for delivery.",
-            "promocode": "",
-            "expiration": "January 31, 2024",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/symmetrysurgical.com\/q4-medical-promotion",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
         "e4bcebc0-a097-4593-9816-d2d696852479": {
           "type": "value",
           "settings": {
@@ -67,23 +33,6 @@
             "id": "",
             "button_text": "View Items",
             "buttontwo_link": "https:\/\/mfimedical.com\/discount\/CPC5?redirect=%2Fcollections%2Fcpac",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
-        "c36eb728-794c-42ef-a80c-09469a208857": {
-          "type": "value",
-          "settings": {
-            "hide": false,
-            "title": "Save 20% on CryoConcepts HistoFreezer Flex Items",
-            "collection": "cryoconcepts",
-            "promo_details": "Save 20% on CryoConcepts HistoFreezer Flex items! (Excludes Buds and Cones Only)",
-            "redemption": "Enter coupon code CYO20 to save 20% on CryoConcepts HistoFreezer Flex items during checkout.",
-            "promocode": "",
-            "expiration": "December 31, 2023",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "",
             "button2_text": "Redeem",
             "flyerlink": ""
           }
@@ -173,20 +122,20 @@
             "flyerlink": ""
           }
         },
-        "071d98ec-ff40-438b-973c-a35e633f42bc": {
+        "167ea26b-b60e-408e-befc-9e3a41b675f6": {
           "type": "value",
           "settings": {
             "hide": false,
-            "title": "Midmark Workstation Promotion",
+            "title": "Midmark Vital Signs Thermometer Upgrade Program (Buy 2 for the price of 1)",
             "collection": "midmark",
-            "promo_details": "Purchase any Mobile Midmark Workstation and receive a $100 rebate.",
-            "redemption": "To redeem your incentive, simply fill out the redemption form. The promotion order period is July 5 - November 30, 2023, with delivery taken by December 29, 2023. Last date to claim incentives online is January  31, 2024.\n\nFor help with redemption, please contact the Midmark Promotion Department at 800-643-6275, ext: 107575 or email promotions@midmark.com",
+            "promo_details": "Purchase two Midmark 002-10974-00 Digital Vital Signs Device Exergen TemporalScanner Upgrade Kits for the price of one. Offer is valid between November 1, 2023 – March 29, 2024.",
+            "redemption": "",
             "promocode": "",
-            "expiration": "January  31, 2024",
+            "expiration": "March 29, 2024",
             "id": "",
             "button_text": "View Items",
-            "buttontwo_link": "https:\/\/midmark.formstack.com\/forms\/2023_workstation_promotion",
-            "button2_text": "Redeem",
+            "buttontwo_link": "https:\/\/www.midmark.com\/docs\/default-source\/documents\/vital-signs-upgrade-kit-product-bulletin.pdf",
+            "button2_text": "Product Bulletin",
             "flyerlink": ""
           }
         },
@@ -203,6 +152,23 @@
             "id": "",
             "button_text": "View Items",
             "buttontwo_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/1046\/1086\/files\/ndd-Medical-Trade-In-Program.pdf",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "54d79ca0-53fe-4215-9139-3c3fd3c7b775": {
+          "type": "value",
+          "settings": {
+            "hide": false,
+            "title": "Newman Medical FREE Doppler Recharge Base",
+            "collection": "newman-medical",
+            "promo_details": "",
+            "redemption": "Redeem directly from Newman Medical. Offer cannot be combined with any other Newman Medical discount, offer, or GPO contract pricing. Offer valid in the U.S. only. Only 1 rebate per purchase. Please print legibly and allow 2-4 weeks for rebate after receipt of recyclable Doppler and form.",
+            "promocode": "",
+            "expiration": "N\/A",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/newman-medical.com\/free-recharge-base-form\/",
             "button2_text": "Redeem",
             "flyerlink": ""
           }
@@ -241,19 +207,19 @@
             "flyerlink": ""
           }
         },
-        "bfc25c9c-10e1-42f2-9c51-97dadaee06c8": {
+        "4283eb64-4b61-4d57-8175-ee41fd171460": {
           "type": "value",
           "settings": {
             "hide": false,
-            "title": "Newman Medical DigiDop Promotion",
+            "title": "Newman Medical DigiDop Trade In Rebate (Up to $200)",
             "collection": "newman-medical",
-            "promo_details": "Receive a free recharge base and qualify for a $75 rebate with purchase of a Newman Medical Rechargeable DigiDop Doppler.",
-            "redemption": "Redeem directly from Newman Medical.",
+            "promo_details": "Purchase a Newman Medical DigiDop Doppler and trade in any Doppler from your practice (regardless of condition, make or model). $200 rebate towards a Newman Medical DigiDop 901 Tabletop Doppler. $150 rebate towards a Newman Medical DigiDop 700\/701\/770\/770R Doppler. $100 rebate towards a Newman Medical DigiDop 300\/301\/330\/330R Doppler.",
+            "redemption": "Redeem directly from Newman Medical. Trade-in & form must be received within 45 days of purchase. Offer cannot be combined with any other Newman Medical discounts, offers, or GPO contract pricing. Offer valid in the U.S. only. Please print legibly and allow 4-6 weeks for rebate after receipt of trade-in and forms.",
             "promocode": "",
-            "expiration": "December 31, 2023",
+            "expiration": "March 31, 2024",
             "id": "",
             "button_text": "View Items",
-            "buttontwo_link": "https:\/\/newman-medical.com\/current-promos\/",
+            "buttontwo_link": "https:\/\/newman-medical.com\/digidop-trade-in-program\/",
             "button2_text": "Redeem",
             "flyerlink": ""
           }
@@ -267,7 +233,7 @@
             "promo_details": "Receive a free Laptop with the purchase of any Newman Medical simpleABI system!",
             "redemption": "Redeem directly from Newman Medical.",
             "promocode": "",
-            "expiration": "December 31, 2023",
+            "expiration": "March 31, 2024",
             "id": "",
             "button_text": "View Items",
             "buttontwo_link": "https:\/\/newman-medical.com\/current-promos\/",
@@ -275,54 +241,37 @@
             "flyerlink": ""
           }
         },
-        "fe6db52d-0fbe-4a34-ae97-f49ed6383f0b": {
+        "6eac5f81-1afd-4b12-83dd-e9e2890a0a21": {
           "type": "value",
           "settings": {
             "hide": false,
-            "title": "Ritter M9 $300 Rebate",
-            "collection": "midmark",
-            "promo_details": "Purchase a factory new Ritter M9 Steam Sterilizer (SKU: MMK-M9-042) and qualify for a $300 manufacturers' rebate.",
-            "redemption": "Redeem directly from Midmark. The promotion order period is May 1 - November 30, 2023, with delivery taken by December 29, 2023. Last date to claim incentives online is January 31, 2024.",
+            "title": "Newman Medical simpleABI Trade In Rebate (Up to $1,500)",
+            "collection": "newman-medical",
+            "promo_details": "Purchase a Newman Medical simpleABI and trade in any ABI system from your practice (regardless of condition, make or model) to qualify for up to a $1,500 rebate.",
+            "redemption": "Redeem directly from Newman Medical. Trade-in & form must be received within 45 days of purchase. Offer cannot be combined with any other Newman Medical discounts, offers, or GPO contract pricing. Offer valid in the U.S. only. Please print legibly and allow 4-6 weeks for rebate after receipt of trade-in and forms.",
             "promocode": "",
-            "expiration": "January 31, 2024",
+            "expiration": "March 31, 2024",
             "id": "",
             "button_text": "View Items",
-            "buttontwo_link": "https:\/\/midmark.formstack.com\/forms\/2023_medical_sterilizer_promotion",
+            "buttontwo_link": "https:\/\/newman-medical.com\/current-promos\/",
             "button2_text": "Redeem",
             "flyerlink": ""
           }
         },
-        "39c4d423-7b62-459e-9280-bcd337fc856f": {
+        "d781c585-f3a2-4916-94b0-157f91495c84": {
           "type": "value",
           "settings": {
             "hide": false,
-            "title": "Ritter M11 $400 Rebate",
-            "collection": "midmark",
-            "promo_details": "Purchase a factory new Ritter M11 Steam Sterilizer (SKU: MMK-M11-042) and qualify for a $400 manufacturers' rebate.",
-            "redemption": "Redeem directly from Midmark. The promotion order period is May 1 - November 30, 2023, with delivery taken by December 29, 2023. Last date to claim incentives online is January 31, 2024.",
+            "title": "PURELL No-Charge Stands",
+            "collection": "gojo",
+            "promo_details": "Purchase one case of PURELL refills between 1\/1\/2024 to 12\/31\/2024 and receive one free stand. Applies to manufacturer part numbers 7216-DS, 7416-DS, 7306-DS-SLV, 7316-DS-SLV, 8210-DS, and 8214-DS.",
+            "redemption": "One case of PURELL refills per stand must be purchased to qualify.  Promotion runs 1\/1\/2024 to 12\/31\/2024 or until inventory is depleted, whichever comes first. GOJO reserves the right to terminate or modify this program at any time without notice.",
             "promocode": "",
-            "expiration": "January 31, 2024",
+            "expiration": "12\/31\/2024",
             "id": "",
             "button_text": "View Items",
-            "buttontwo_link": "https:\/\/midmark.formstack.com\/forms\/2023_medical_sterilizer_promotion",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
-        "fd800c9c-f06b-4268-84e9-b48046f35ae2": {
-          "type": "value",
-          "settings": {
-            "hide": false,
-            "title": "Schiller SpiroScout Spirometer $200 Rebate",
-            "collection": "schiller",
-            "promo_details": "Purchase a Schiller SpiroScout spirometer between October 1 - December 31, 2023 to qualify for a $200 rebate!",
-            "redemption": "Redeem directly from Schiller.",
-            "promocode": "",
-            "expiration": "December 31, 2023",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/www.schillerservice.com\/Articles.asp?ID=342",
-            "button2_text": "Redeem",
+            "buttontwo_link": "",
+            "button2_text": "",
             "flyerlink": ""
           }
         },
@@ -394,19 +343,121 @@
             "flyerlink": ""
           }
         },
-        "518d8f41-b73d-4c2d-bbbd-7bdff3ecd2bb": {
+        "cd6fe279-5d43-44b9-af56-f220def3eb9a": {
           "type": "value",
           "settings": {
             "hide": false,
-            "title": "Welch Allyn + Baxter Upgrade & Save Rebate (Up to $5,000)",
+            "title": "Welch Allyn Q1 2024 Rebates (Up to $500 per item)",
             "collection": "welch-allyn",
-            "promo_details": "Mix and match on purchases of qualifying Welch Allyn and Baxter devices and submit for a rebate after sale. (Up to $5,000)",
-            "redemption": "Offer available on eligible purchases made July 1 - September 30, 2023. All information must be submitted via the on-line redemption process by December 31,2023. Promotion valid in U.S. only to primary care medical facilities. Limit one rebate submission per customer for up to a maximum total rebate of $5,000.",
+            "promo_details": "Purchase qualifying Welch Allyn products between January 1 - March 31, 2024 and receive up to a $500 rebate per item. Qualifying items include Welch Allyn Green Series 777 Integrated Wall System, Connex Spot Monitor, Spot Vital Signs 4400 Device, CP 150 Resting ECG, ELI 280 Resting ECG, Diagnostic Cardiology Suite, RetinaVue 700 Imager, and Spot Vision Screener.",
+            "redemption": "Offer available on eligible purchases made January 1 - March 31, 2024. To be eligible for offer, customer must purchase qualifying Welch Allyn products identified in this document and provide proof of Welch Allyn purchase as indicated on the redemption form found at www.hillrom.com\/2024rebate. All information must be submitted via the online redemption process by July 31, 2024. All customers must submit a completed W-9. Promotion valid in U.S. only to primary care medical facilities, Long Term Care Facilities, and Ambulatory Surgery Centers. Distributor stocking orders do not qualify. Please allow 12 weeks for receipt of rebate. Promotion cannot be combined with any other promotion, offer, coupon, enhanced discount or special pricing arrangement; some exclusions may apply.",
             "promocode": "",
-            "expiration": "December 31, 2023",
+            "expiration": "July 31, 2024",
             "id": "",
             "button_text": "View Items",
-            "buttontwo_link": "https:\/\/www.hillrom.com\/2023rebate\/",
+            "buttontwo_link": "https:\/\/www.hillrom.com\/en\/products\/promotions\/2024rebate\/",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "98de0f70-6ce3-4660-9656-93f1a1b6e83d": {
+          "type": "value",
+          "settings": {
+            "hide": false,
+            "title": "Welch Allyn Spot Vision Screener Upgrade $1,000 Rebate",
+            "collection": "welch-allyn",
+            "promo_details": "Purchase a new Welch Allyn Spot Vision Screener (model number VS100S-B or VS100SH-B) between January 1, 2023 - December 31, 2023 and provide proof of purchase, W-9, photo of trade-in device with serial number or UPC label visible as indicated on the redemption form to receive a $1,000 rebate. Customers do not need to send in their old devices.",
+            "redemption": "Vision screeners eligible for trade in include: Welch Allyn SureSight Vision Screener, Welch Allyn Spot Vision Screener (2.0 model), PediaVision, GoCheck Kids, Plusoptix, MTI, Topcon, Retinomax, Titmus V Series, Stereo Optical Vision Screeners, Canon, Reichert, Marco and\/or iScreen brands. Offer valid from January 1, 2023 - December 31, 2023. To be eligible for offer, customer must purchase a new Spot Vision Screener (model number VS100S-B or VS100SH-B) and provide proof of purchase, W-9, photo of trade-in device with serial number or UPC label visible as indicated on the redemption form found at hillrom.com\/svsupgrade. All information must be submitted via the online redemption process by February 15, 2025. Offer cannot be combined with any other offer, discount or GPO contract pricing. Some exclusions may apply. Valid for U.S. customers only. Distributor stocking orders do not qualify. All submissions require a W-9, proof of purchase of new Spot Vision Screener and photo of trade-in device with serial number visible. Please allow 12 weeks for receipt of rebate check. Customers do not need to send in their old devices.",
+            "promocode": "",
+            "expiration": "February 15, 2025",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/www.hillrom.com\/svsupgrade\/",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "6bbd81ad-f107-4b43-9d93-f633a58869d0": {
+          "type": "value",
+          "settings": {
+            "hide": false,
+            "title": "Closed: Bovie Surgi-Center PRO Promotion",
+            "collection": "bovie",
+            "promo_details": "Purchase a Bovie Surgi-Center PRO (A2350) electrosurgical generator and receive  the following items for FREE. (Receive One box of each single- \nuse accessory: ES20T, ES58T, ESREC, ES01T, ES02T, ES03T, ESP1, ES04T.) ($929 value). Applies to purchases made between October 1 - December 31, 2023.",
+            "redemption": "Online redemption form must be\nsubmitted by January 31, 2024.\nPlease allow 4-6 weeks for delivery.",
+            "promocode": "",
+            "expiration": "January 31, 2024",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/symmetrysurgical.com\/q4-medical-promotion",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "260b3d5f-cff6-4a1e-a739-082e218d88ec": {
+          "type": "value",
+          "settings": {
+            "hide": false,
+            "title": "Closed: Bovie OR PRO Promotion",
+            "collection": "bovie",
+            "promo_details": "Purchase a Bovie OR PRO (A3350) electrosurgical generator and receive  the following items for FREE. (Receive One box of each single- \nuse accessory: ESP1, ES07T, ES20T, ES58T, ESREC, ES01T, ES02T, ES03T, ES04T, ES06T.) ($1,173 value). Applies to purchases made between October 1 - December 31, 2023.",
+            "redemption": "Online redemption form must be\nsubmitted by January 31, 2024.\nPlease allow 4-6 weeks for delivery.",
+            "promocode": "",
+            "expiration": "January 31, 2024",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/symmetrysurgical.com\/q4-medical-promotion",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "071d98ec-ff40-438b-973c-a35e633f42bc": {
+          "type": "value",
+          "settings": {
+            "hide": false,
+            "title": "Closed: Midmark Workstation Promotion",
+            "collection": "midmark",
+            "promo_details": "Purchase any Mobile Midmark Workstation and receive a $100 rebate.",
+            "redemption": "To redeem your incentive, simply fill out the redemption form. The promotion order period is July 5 - November 30, 2023, with delivery taken by December 29, 2023. Last date to claim incentives online is January  31, 2024.\n\nFor help with redemption, please contact the Midmark Promotion Department at 800-643-6275, ext: 107575 or email promotions@midmark.com",
+            "promocode": "",
+            "expiration": "January  31, 2024",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/midmark.formstack.com\/forms\/2023_workstation_promotion",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "fe6db52d-0fbe-4a34-ae97-f49ed6383f0b": {
+          "type": "value",
+          "settings": {
+            "hide": false,
+            "title": "Closed: Ritter M9 $300 Rebate",
+            "collection": "midmark",
+            "promo_details": "Purchase a factory new Ritter M9 Steam Sterilizer (SKU: MMK-M9-042) and qualify for a $300 manufacturers' rebate.",
+            "redemption": "Redeem directly from Midmark. The promotion order period is May 1 - November 30, 2023, with delivery taken by December 29, 2023. Last date to claim incentives online is January 31, 2024.",
+            "promocode": "",
+            "expiration": "January 31, 2024",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/midmark.formstack.com\/forms\/2023_medical_sterilizer_promotion",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "39c4d423-7b62-459e-9280-bcd337fc856f": {
+          "type": "value",
+          "settings": {
+            "hide": false,
+            "title": "Closed: Ritter M11 $400 Rebate",
+            "collection": "midmark",
+            "promo_details": "Purchase a factory new Ritter M11 Steam Sterilizer (SKU: MMK-M11-042) and qualify for a $400 manufacturers' rebate.",
+            "redemption": "Redeem directly from Midmark. The promotion order period is May 1 - November 30, 2023, with delivery taken by December 29, 2023. Last date to claim incentives online is January 31, 2024.",
+            "promocode": "",
+            "expiration": "January 31, 2024",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/midmark.formstack.com\/forms\/2023_medical_sterilizer_promotion",
             "button2_text": "Redeem",
             "flyerlink": ""
           }
@@ -415,7 +466,7 @@
           "type": "value",
           "settings": {
             "hide": false,
-            "title": "Welch Allyn Community Health Center Rebate",
+            "title": "Closed: Welch Allyn Community Health Center Rebate",
             "collection": "welch-allyn",
             "promo_details": "Community Health Centers must purchase at least 4 qualifying devices identified in the redemption document on one order to qualify for up to a maximum total rebate amount of $15,000.",
             "redemption": "Redeem directly from Welch Allyn. Offer available on eligible purchases made April 1 - December 31, 2023, by Federally Qualified Community Health Centers only. Limit one rebate submission per customer for up to a maximum total rebate amount of $15,000. Promotion valid in US only. Please allow 12 weeks for receipt of rebate check.",
@@ -424,24 +475,6 @@
             "id": "",
             "button_text": "View Items",
             "buttontwo_link": "https:\/\/hillrom.com\/improvechroniccare",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
-        "7303c476-9c7b-427c-9cdd-c7c9d54b1423": {
-          "type": "value",
-          "disabled": true,
-          "settings": {
-            "hide": false,
-            "title": "Welch Allyn Spot Vision Screener Rebate ($500)",
-            "collection": "welch-allyn",
-            "promo_details": "Purchase a Welch Allyn Spot Vision Screener and receive a $500 rebate.",
-            "redemption": "Promotion valid in U.S. for primary care customers only. Offer available on eligible purchases made between April 15 – September 30, 2023. To qualify, all information must be submitted via the online redemption process by December 15, 2023.",
-            "promocode": "",
-            "expiration": "December 15, 2023",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/www.hillrom.com\/en\/products\/spot-vision-screener\/redeem-your-rebate-when-you-purchase-the-welch-allyn-spot-vision-screener\/",
             "button2_text": "Redeem",
             "flyerlink": ""
           }
@@ -482,60 +515,6 @@
             "flyerlink": ""
           }
         },
-        "3940f77c-58a3-4daf-9a6e-c5b9fc23bbfd": {
-          "type": "value",
-          "disabled": true,
-          "settings": {
-            "hide": false,
-            "title": "Save 5% on Chattanooga",
-            "collection": "chattanooga",
-            "promo_details": "Save 5% on Chattanooga items which include physical therapy equipment and more!",
-            "redemption": "Enter coupon code 5OFF to save 5% on Chattanooga items during checkout.",
-            "promocode": "",
-            "expiration": "December 31, 2023",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/mfimedical.com\/discount\/DJO5?redirect=%2Fcollections%2Fchattanooga",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
-        "87a78bed-e090-4f9e-bfd6-be4cb685d8b1": {
-          "type": "value",
-          "disabled": true,
-          "settings": {
-            "hide": false,
-            "title": "Save 5% on Defibtech",
-            "collection": "defibtech",
-            "promo_details": "Save 5% on Defibtech items which include AEDs & supplies!",
-            "redemption": "Enter coupon code 5OFF to save 5% on Defibtech items during checkout.",
-            "promocode": "",
-            "expiration": "December 31, 2023",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/mfimedical.com\/discount\/DFT5?redirect=%2Fcollections%2Fdefibtech",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
-        "3bb1c166-fe2e-4a00-a522-3ed1d9956a69": {
-          "type": "value",
-          "disabled": true,
-          "settings": {
-            "hide": false,
-            "title": "Save 5% on MIR",
-            "collection": "mir",
-            "promo_details": "Save 5% on MIR items which include spirometers & supplies!",
-            "redemption": "Enter coupon code 5OFF to save 5% on MIR items during checkout.",
-            "promocode": "",
-            "expiration": "December 31, 2023",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/mfimedical.com\/discount\/MIR5?redirect=%2Fcollections%2Fmir",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
         "dd490547-aa6f-482b-a9a5-4cac34631220": {
           "type": "value",
           "disabled": true,
@@ -550,42 +529,6 @@
             "id": "",
             "button_text": "View Items",
             "buttontwo_link": "https:\/\/symmetrysurgical.com\/q2-medical-promotion",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
-        "de2c068f-ab13-4246-8937-0686aebb96e4": {
-          "type": "value",
-          "disabled": true,
-          "settings": {
-            "hide": false,
-            "title": "Closed: Tuttnauer $200 Rebate",
-            "collection": "tuttnauer",
-            "promo_details": "Purchase a new Tuttnauer 2540M, 2540MK, 2340M, or Valueklave 1730 between January 1 - June 30, 2023 and qualify for a $200 manufacturers' rebate.",
-            "redemption": "Redeem directly from Tuttnauer. Redemption deadline\nis July 31, 2023. Please allow 6-8 weeks for receipt of rebate. Excludes reconditioned, scratched and\/or dented autoclaves.",
-            "promocode": "",
-            "expiration": "July 31, 2023",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/tuttnauer.com\/us\/promotions\/rebate\/q1-2023-manual-autoclaves",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
-        "b5edd786-3346-431c-9af6-286ba344c5f0": {
-          "type": "value",
-          "disabled": true,
-          "settings": {
-            "hide": false,
-            "title": "Save 5% on Tuttnauer",
-            "collection": "tuttnauer",
-            "promo_details": "Save 5% on Tuttnauer items which include autoclaves, accessories, and more!",
-            "redemption": "Enter coupon code 5OFF to save 5% on Tuttnauer items during checkout.",
-            "promocode": "",
-            "expiration": "December 31, 2023",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/mfimedical.com\/discount\/TTN5?redirect=%2Fcollections%2Ftuttnauer",
             "button2_text": "Redeem",
             "flyerlink": ""
           }
@@ -644,20 +587,56 @@
             "flyerlink": ""
           }
         },
-        "4cb21bbc-d156-479e-bde6-5fec961c0f36": {
+        "3940f77c-58a3-4daf-9a6e-c5b9fc23bbfd": {
           "type": "value",
           "disabled": true,
           "settings": {
             "hide": false,
-            "title": "lifeSign Buy 5 Get 1 Free",
-            "collection": "lifesign",
-            "promo_details": "Buy 5 boxes of the lifeSign Status Covid-19\/Flu A&B, 36025 Status Flu A&B, or 34125 Status Strep A Flip and get 1 box for free.",
-            "redemption": "Redeem directly from lifeSign.",
+            "title": "Save 5% on Chattanooga",
+            "collection": "chattanooga",
+            "promo_details": "Save 5% on Chattanooga items which include physical therapy equipment and more!",
+            "redemption": "Enter coupon code 5OFF to save 5% on Chattanooga items during checkout.",
             "promocode": "",
-            "expiration": "October 31, 2023",
+            "expiration": "December 31, 2023",
             "id": "",
             "button_text": "View Items",
-            "buttontwo_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/1046\/1086\/files\/2023-LifeSign-Buy-5-Get-6-Status-Flu-COVID-19-Flu-Strep-A-Promo-Form.pdf",
+            "buttontwo_link": "https:\/\/mfimedical.com\/discount\/DJO5?redirect=%2Fcollections%2Fchattanooga",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "c36eb728-794c-42ef-a80c-09469a208857": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Save 20% on CryoConcepts HistoFreezer Flex Items",
+            "collection": "cryoconcepts",
+            "promo_details": "Save 20% on CryoConcepts HistoFreezer Flex items! (Excludes Buds and Cones Only)",
+            "redemption": "Enter coupon code CYO20 to save 20% on CryoConcepts HistoFreezer Flex items during checkout.",
+            "promocode": "",
+            "expiration": "December 31, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "87a78bed-e090-4f9e-bfd6-be4cb685d8b1": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Save 5% on Defibtech",
+            "collection": "defibtech",
+            "promo_details": "Save 5% on Defibtech items which include AEDs & supplies!",
+            "redemption": "Enter coupon code 5OFF to save 5% on Defibtech items during checkout.",
+            "promocode": "",
+            "expiration": "December 31, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/mfimedical.com\/discount\/DFT5?redirect=%2Fcollections%2Fdefibtech",
             "button2_text": "Redeem",
             "flyerlink": ""
           }
@@ -680,6 +659,114 @@
             "flyerlink": ""
           }
         },
+        "4cb21bbc-d156-479e-bde6-5fec961c0f36": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "lifeSign Buy 5 Get 1 Free",
+            "collection": "lifesign",
+            "promo_details": "Buy 5 boxes of the lifeSign Status Covid-19\/Flu A&B, 36025 Status Flu A&B, or 34125 Status Strep A Flip and get 1 box for free.",
+            "redemption": "Redeem directly from lifeSign.",
+            "promocode": "",
+            "expiration": "October 31, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/1046\/1086\/files\/2023-LifeSign-Buy-5-Get-6-Status-Flu-COVID-19-Flu-Strep-A-Promo-Form.pdf",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "3bb1c166-fe2e-4a00-a522-3ed1d9956a69": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Save 5% on MIR",
+            "collection": "mir",
+            "promo_details": "Save 5% on MIR items which include spirometers & supplies!",
+            "redemption": "Enter coupon code 5OFF to save 5% on MIR items during checkout.",
+            "promocode": "",
+            "expiration": "December 31, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/mfimedical.com\/discount\/MIR5?redirect=%2Fcollections%2Fmir",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "bfc25c9c-10e1-42f2-9c51-97dadaee06c8": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Newman Medical DigiDop Promotion",
+            "collection": "newman-medical",
+            "promo_details": "Receive a free recharge base and qualify for a $75 rebate with purchase of a Newman Medical Rechargeable DigiDop Doppler.",
+            "redemption": "Redeem directly from Newman Medical.",
+            "promocode": "",
+            "expiration": "December 31, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/newman-medical.com\/current-promos\/",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "de2c068f-ab13-4246-8937-0686aebb96e4": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Closed: Tuttnauer $200 Rebate",
+            "collection": "tuttnauer",
+            "promo_details": "Purchase a new Tuttnauer 2540M, 2540MK, 2340M, or Valueklave 1730 between January 1 - June 30, 2023 and qualify for a $200 manufacturers' rebate.",
+            "redemption": "Redeem directly from Tuttnauer. Redemption deadline\nis July 31, 2023. Please allow 6-8 weeks for receipt of rebate. Excludes reconditioned, scratched and\/or dented autoclaves.",
+            "promocode": "",
+            "expiration": "July 31, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/tuttnauer.com\/us\/promotions\/rebate\/q1-2023-manual-autoclaves",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "b5edd786-3346-431c-9af6-286ba344c5f0": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Save 5% on Tuttnauer",
+            "collection": "tuttnauer",
+            "promo_details": "Save 5% on Tuttnauer items which include autoclaves, accessories, and more!",
+            "redemption": "Enter coupon code 5OFF to save 5% on Tuttnauer items during checkout.",
+            "promocode": "",
+            "expiration": "December 31, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/mfimedical.com\/discount\/TTN5?redirect=%2Fcollections%2Ftuttnauer",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "fd800c9c-f06b-4268-84e9-b48046f35ae2": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Schiller SpiroScout Spirometer $200 Rebate",
+            "collection": "schiller",
+            "promo_details": "Purchase a Schiller SpiroScout spirometer between October 1 - December 31, 2023 to qualify for a $200 rebate!",
+            "redemption": "Redeem directly from Schiller.",
+            "promocode": "",
+            "expiration": "December 31, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/www.schillerservice.com\/Articles.asp?ID=342",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
         "7b1385a9-b2fa-44a3-98d3-85c3823d73db": {
           "type": "value",
           "disabled": true,
@@ -694,24 +781,6 @@
             "id": "",
             "button_text": "View Items",
             "buttontwo_link": "https:\/\/mfimedical.com\/products\/vectracor-vectraplexecg-system",
-            "button2_text": "Redeem",
-            "flyerlink": ""
-          }
-        },
-        "081191d6-631d-49b0-a987-43ffcf5f0db1": {
-          "type": "value",
-          "disabled": true,
-          "settings": {
-            "hide": false,
-            "title": "Zoll AED Trade-In Rebate",
-            "collection": "zoll",
-            "promo_details": "Purchase a Zoll AED between January 1st - June 30th, 2023 and qualify for a rebate with trade-in of eligible AED manufactured by Cardiac Science, Defibtech, HeartSine, Philips, Physio-Control, or Zoll.",
-            "redemption": "Redeem directly from Zoll.",
-            "promocode": "",
-            "expiration": "June 30, 2023",
-            "id": "",
-            "button_text": "View Items",
-            "buttontwo_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/1046\/1086\/files\/Zoll-End-User-AED-Trade-In-Program-exp-6-30.pdf",
             "button2_text": "Redeem",
             "flyerlink": ""
           }
@@ -733,51 +802,112 @@
             "button2_text": "Redeem",
             "flyerlink": ""
           }
+        },
+        "518d8f41-b73d-4c2d-bbbd-7bdff3ecd2bb": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Welch Allyn + Baxter Upgrade & Save Rebate (Up to $5,000)",
+            "collection": "welch-allyn",
+            "promo_details": "Mix and match on purchases of qualifying Welch Allyn and Baxter devices and submit for a rebate after sale. (Up to $5,000)",
+            "redemption": "Offer available on eligible purchases made July 1 - September 30, 2023. All information must be submitted via the on-line redemption process by December 31,2023. Promotion valid in U.S. only to primary care medical facilities. Limit one rebate submission per customer for up to a maximum total rebate of $5,000.",
+            "promocode": "",
+            "expiration": "December 31, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/www.hillrom.com\/2023rebate\/",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "7303c476-9c7b-427c-9cdd-c7c9d54b1423": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Welch Allyn Spot Vision Screener Rebate ($500)",
+            "collection": "welch-allyn",
+            "promo_details": "Purchase a Welch Allyn Spot Vision Screener and receive a $500 rebate.",
+            "redemption": "Promotion valid in U.S. for primary care customers only. Offer available on eligible purchases made between April 15 – September 30, 2023. To qualify, all information must be submitted via the online redemption process by December 15, 2023.",
+            "promocode": "",
+            "expiration": "December 15, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/www.hillrom.com\/en\/products\/spot-vision-screener\/redeem-your-rebate-when-you-purchase-the-welch-allyn-spot-vision-screener\/",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
+        },
+        "081191d6-631d-49b0-a987-43ffcf5f0db1": {
+          "type": "value",
+          "disabled": true,
+          "settings": {
+            "hide": false,
+            "title": "Zoll AED Trade-In Rebate",
+            "collection": "zoll",
+            "promo_details": "Purchase a Zoll AED between January 1st - June 30th, 2023 and qualify for a rebate with trade-in of eligible AED manufactured by Cardiac Science, Defibtech, HeartSine, Philips, Physio-Control, or Zoll.",
+            "redemption": "Redeem directly from Zoll.",
+            "promocode": "",
+            "expiration": "June 30, 2023",
+            "id": "",
+            "button_text": "View Items",
+            "buttontwo_link": "https:\/\/cdn.shopify.com\/s\/files\/1\/1046\/1086\/files\/Zoll-End-User-AED-Trade-In-Program-exp-6-30.pdf",
+            "button2_text": "Redeem",
+            "flyerlink": ""
+          }
         }
       },
       "block_order": [
-        "6bbd81ad-f107-4b43-9d93-f633a58869d0",
-        "260b3d5f-cff6-4a1e-a739-082e218d88ec",
         "e4bcebc0-a097-4593-9816-d2d696852479",
         "59df903b-d2e9-441d-a872-b17c9413d4a6",
-        "c36eb728-794c-42ef-a80c-09469a208857",
         "71c04c2a-4925-462a-a717-446cb4ca4d42",
         "8c86df8f-87f0-436a-a2e2-05c7b348a528",
         "38e3f0ff-4f47-4249-992b-ba7c5d81a4d7",
         "148b7d4b-d944-486f-b225-1886a1386a3a",
         "b7481f4b-5c01-4e29-bf9d-6b76227147bb",
-        "071d98ec-ff40-438b-973c-a35e633f42bc",
+        "167ea26b-b60e-408e-befc-9e3a41b675f6",
         "a2ec1ff0-837a-41e2-85b9-733dde368d93",
+        "54d79ca0-53fe-4215-9139-3c3fd3c7b775",
         "0af1c72a-0455-45a2-bdc4-3f88caf8f2d9",
         "dad069d9-da7a-4619-b0ee-29c33dbf33ab",
-        "bfc25c9c-10e1-42f2-9c51-97dadaee06c8",
+        "4283eb64-4b61-4d57-8175-ee41fd171460",
         "a209bcca-fce7-4ff8-bf03-a89ef40aca3d",
-        "fe6db52d-0fbe-4a34-ae97-f49ed6383f0b",
-        "39c4d423-7b62-459e-9280-bcd337fc856f",
-        "fd800c9c-f06b-4268-84e9-b48046f35ae2",
+        "6eac5f81-1afd-4b12-83dd-e9e2890a0a21",
+        "d781c585-f3a2-4916-94b0-157f91495c84",
         "d8f7bc7a-e5e2-42c0-8d52-d9721d152bc5",
         "9b55cbe4-6639-4758-b2c8-43aa7d6aec45",
         "9d191e0d-d1a8-4a78-bd32-2bd56ecd1400",
         "62b251fe-48a0-4c3c-8fad-bfb8e8ec0bcd",
-        "518d8f41-b73d-4c2d-bbbd-7bdff3ecd2bb",
+        "cd6fe279-5d43-44b9-af56-f220def3eb9a",
+        "98de0f70-6ce3-4660-9656-93f1a1b6e83d",
+        "6bbd81ad-f107-4b43-9d93-f633a58869d0",
+        "260b3d5f-cff6-4a1e-a739-082e218d88ec",
+        "071d98ec-ff40-438b-973c-a35e633f42bc",
+        "fe6db52d-0fbe-4a34-ae97-f49ed6383f0b",
+        "39c4d423-7b62-459e-9280-bcd337fc856f",
         "763e574c-97a7-46f1-9b2b-4c8c164b0c92",
-        "7303c476-9c7b-427c-9cdd-c7c9d54b1423",
         "c64702e5-6bec-444d-8c2c-d85ce4b964e0",
         "10f955b0-aa03-46cf-8184-0087445d3e28",
-        "3940f77c-58a3-4daf-9a6e-c5b9fc23bbfd",
-        "87a78bed-e090-4f9e-bfd6-be4cb685d8b1",
-        "3bb1c166-fe2e-4a00-a522-3ed1d9956a69",
         "dd490547-aa6f-482b-a9a5-4cac34631220",
-        "de2c068f-ab13-4246-8937-0686aebb96e4",
-        "b5edd786-3346-431c-9af6-286ba344c5f0",
         "9d6bfcb3-7b7b-4112-b4e9-1ce4307fa630",
         "36672090-555a-4bb4-aa4d-725905a77d60",
         "955ac53e-ba62-42b5-9494-9c17e9d9a6ef",
-        "4cb21bbc-d156-479e-bde6-5fec961c0f36",
+        "3940f77c-58a3-4daf-9a6e-c5b9fc23bbfd",
+        "c36eb728-794c-42ef-a80c-09469a208857",
+        "87a78bed-e090-4f9e-bfd6-be4cb685d8b1",
         "ee4c75ec-8ddd-4b50-95dd-26635fb14cb0",
+        "4cb21bbc-d156-479e-bde6-5fec961c0f36",
+        "3bb1c166-fe2e-4a00-a522-3ed1d9956a69",
+        "bfc25c9c-10e1-42f2-9c51-97dadaee06c8",
+        "de2c068f-ab13-4246-8937-0686aebb96e4",
+        "b5edd786-3346-431c-9af6-286ba344c5f0",
+        "fd800c9c-f06b-4268-84e9-b48046f35ae2",
         "7b1385a9-b2fa-44a3-98d3-85c3823d73db",
-        "081191d6-631d-49b0-a987-43ffcf5f0db1",
-        "7ce11a38-4c57-4afc-ada3-f42ec21e0aa3"
+        "7ce11a38-4c57-4afc-ada3-f42ec21e0aa3",
+        "518d8f41-b73d-4c2d-bbbd-7bdff3ecd2bb",
+        "7303c476-9c7b-427c-9cdd-c7c9d54b1423",
+        "081191d6-631d-49b0-a987-43ffcf5f0db1"
       ],
       "settings": {
         "title": "Promotions"

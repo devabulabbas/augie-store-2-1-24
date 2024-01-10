@@ -332,6 +332,7 @@ onclick="ga('send', 'event', 'header link', 'click', 'search bar');">
 
                 <div id="account-popover" class="popover {% if customer %}popover--logged{% else %}popover--large popover--unlogged{% endif %}" aria-hidden="true">
                   {%- render 'icon', icon: 'nav-triangle-borderless' -%}
+
                   {%- if customer -%}
                     <div class="popover__inner popover__inner--no-padding">
                       <div class="popover__linklist">
@@ -339,12 +340,11 @@ onclick="ga('send', 'event', 'header link', 'click', 'search bar');">
                           <span class=''>You have <span class="sweettooth-points-balance"></span> points</span>
                         </div>
                         <a class="popover__link-item" href="{{ routes.account_url }}">Account</a>
-                        <a class="popover__link-item" href="{{ routes.account_url }}#orders">Orders</a>
-                        <a class="popover__link-item" href="{{ routes.account_url }}#wishlist">Saved items</a>
+                        <a class="popover__link-item" href="https://mfimedical.com/tools/recurring/get-subscription-access?passwordless=true">Subscriptions</a>
                         <a class="popover__link-item" href="{{ routes.account_logout_url }}">Sign out</a>
                       </div>
                     </div>
-                  {%- else -%}
+                  {%- else -%}  
                     <div class="popover__panel-list">
                       <div id="header-login-panel" class="popover__panel popover__panel--default is-selected">
                         <div class="popover__inner">
@@ -353,7 +353,6 @@ onclick="ga('send', 'event', 'header link', 'click', 'search bar');">
                           {%- endform -%}
                           <div class="popover__secondary-action">
                             <p>{{ 'customer.login.new_customer' | t }} <a href="{{ routes.account_register_url }}" class="link link--accented">{{ 'customer.login.create_your_account' | t }}</a></p>
-                            <p>{{ 'customer.login.lost_password' | t }} <a href="{{ routes.account_url }}#recover-password" aria-controls="header-recover-panel" class="link link--accented">{{ 'customer.login.recover_password' | t }}</a></p>
                           </div>
                         </div>
                       </div>

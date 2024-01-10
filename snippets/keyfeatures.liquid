@@ -41,7 +41,7 @@
 <div class='flex-col'>
   <div class="kf-content">
     <span class="product-form__option-name text--strong h4" style='margin-bottom: 10px;margin-left: -15px;'>Key Features</span>
-    <ul class="kf-ul">
+    <ul class="kf-ul ">
  {% assign machine = product.metafields.custom.variant_fields | split: "|" %}
  {% assign compare_item = '' %}
  {%- for variant in product.variants -%}
@@ -75,7 +75,8 @@
       			{% if machine_name == 'warranty' %}
           			 <li id='kf_warranty'{%- if selected_variant.available -%}{%- else -%} style='display: none'{%- endif -%}>
                       <span class='text--strong' data-tooltip="Click for more information" data-micromodal-trigger="modal-warranty">Warranty:</span> 
-                      <span data-tooltip="Click for more information" data-micromodal-trigger="modal-warranty">{% render 'variant-warranty' %}{% render 'info-icon' %}</span>
+                      <span data-tooltip="Click for more information" data-micromodal-trigger="modal-warranty">
+                  {% render 'variant-warranty' %}{% render 'info-icon' %}</span>
                     </li>
       			{% endif %}
     			{% endif %}
@@ -110,11 +111,11 @@
       {% if col_url == 'blank' %}
         {% assign col_url = '/pages/search-results?q=' |append : product.vendor %}
       {% endif %}
-    <ul class="kf-ul">
+    <ul class="kf-ul ">
     <li><span>
         <strong>MFR: </strong>
           <a target="_blank" class="product-meta__vendor link link--accented-reverse" href="{{ col_url }} ">
-          {{ product.vendor }} </a>{% render 'variant-ships-from' %}
+          {{ product.vendor | capitalize  }} </a>{% render 'variant-ships-from' %}
         
       </span></li>
       {% render 'pp-mpn' %}

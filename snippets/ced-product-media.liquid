@@ -82,12 +82,16 @@
 {% for media in  product_media%}
   {%- case media.media_type -%}
                   {%- when 'image' -%}
-                    <div class="product-gallery__size-limiter" style="max-width: {{ media.width }}px">
+                    <div class="product-gallery__size-limiter jjjjjjjj" style="max-width: {{ media.width }}px">
                       {%- capture supported_sizes -%}{%- render 'image-size', sizes: '400,500,600,700,800,900,1000,1100,1200', image: media -%}{%- endcapture -%}
                       {%- assign image_url = media | img_url: '1x1' | replace: '_1x1.', '_{width}x.' -%}
 
                       <div class="aspect-ratio" style="height:100px;width:100px">
-                        <img class="ced_thumbnail_img product-gallery__image lazyload image--fade-in" data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" data-sizes="auto" data-zoom="{{ media | img_url: '1600x' }}" data-zoom-width="{{ media.width | at_most: 1600 }}" alt="{{ media_alt | escape }}" data-cedimg={{ media | img_url: '600x' }}>
+                        <img class="jjjjjj ced_thumbnail_img product-gallery__image lazyload image--fade-in" 
+                          data-src="{{ image_url }}" data-widths="[{{ supported_sizes }}]" srcset="{{ media | img_url: '320x' }} 320w" 
+    data-sizes="auto" data-zoom="{{ media | img_url: '1600x' }}" 
+   srcset="" data-zoom-width="{{ media.width | at_most: 1600 }}" alt="{{ media_alt | escape }}" 
+                          data-cedimg={{ media | img_url: '600x' }}>
 
                         <noscript>
                           <img src="{{ media | img_url: '800x' }}" alt="{{ media_alt | escape }}">

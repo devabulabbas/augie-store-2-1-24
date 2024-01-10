@@ -622,16 +622,19 @@ function createTitleLinks(titlesArray) {
     const jumpToContainer = document.querySelector('.jumpto-container-wrapper');
     const jumptoText = document.getElementById('jumptotext');
 
-      const reversedTitles = titlesArray.slice().reverse();
-
+    const reversedTitles = titlesArray.slice().reverse();
+    let arrayLength = reversedTitles.length;
+    arrayLength=arrayLength-1;
+ 
     reversedTitles.forEach((title , index) => {
-     
         const link = document.createElement('a');
         // link.href = `#${title.replace(/\s+/g, '')}`;
       link.setAttribute('data-attr', title.replace(/\s+/g, ''));
-
-        link.textContent = title + ',';
-        jumpToContainer.insertBefore(link, jumptoText.nextSibling);
+      let coma ;let text2=" ";
+      if(index == 0){coma = '';}else{coma=', ';}
+      coma = coma+" ";
+      link.textContent = title + coma;
+      jumpToContainer.insertBefore(link, jumptoText.nextSibling);
     });
 }
 
@@ -642,12 +645,13 @@ const accordionTitles = getAccordionTitles();
 createTitleLinks(accordionTitles);
 
 document.querySelectorAll('.jumpto-container-wrapper a').forEach(anchor => {
+  
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
         // const targetId = this.getAttribute('href').substring(1);
         const targetId = this.dataset.attr;
         const targetElement = document.getElementById(targetId);
-
+console.log(targetElement.firstChild.nextElementSibling.classList.add("is-open"));
       if (targetElement) {
     const offsetTop = targetElement.getBoundingClientRect().top + window.scrollY - 110; // Adjust the offset value
     window.scrollTo({

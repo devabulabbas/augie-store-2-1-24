@@ -5,8 +5,8 @@
     <div class="ced_wrapper_share">
     <h1 class="product-meta__title heading h1">{{ product.title }}</h1>
       
-  <div class="custom custom_wishlist_wrap">
-    {%- render 'flits_capture_code' with 'component',template:'comp_wishlistProdcutButton' -%}
+  <div class="custom custom_wishlist_wrap mobile-hide">
+  
     <div class="ced_wishlist_share_wrap">
         <div class="popover">
         <button class="popover__trigger">Share</button>
@@ -49,9 +49,24 @@
 
   
     <div class="product_cstm_review product-meta__reference flex-col-row ai-fs-c jc-fs">
+      <div class="mbl-share--wrp">
     {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: true, product: product %}
         {%- assign vendor_handle = product.vendor | handle -%}
         {%- assign collection_for_vendor = collections[vendor_handle] -%}
+
+      <div class="custom custom_wishlist_wrap desktop-hide">
+  
+    <div class="ced_wishlist_share_wrap">
+        <div class="popover">
+        <button class="popover__trigger">Share</button>
+          <ul class="popover__menu">
+            <li class="popover__menu-item">  {% render 'social-sharing', share_title: product.title, share_permalink: product.url, share_image: product.featured_media %}</li>
+          </ul>
+        </div>
+      </div>
+      
+      </div>
+      </div>
           <div>
         <span class="product-meta__sku" {% if selected_variant.sku == blank %}style="display: none"{% endif %}>
           <strong>{{- 'product.general.sku' | t -}}</strong> <span class="product-meta__sku-number">{{ selected_variant.sku }}</span>

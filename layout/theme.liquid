@@ -2,6 +2,7 @@
 
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+  {% include 'shop-sheriff-amp' %}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, minimum-scale=1.0, maximum-scale=1.0">
     <meta name="theme-color" content="{{ settings.accent_color }}">
@@ -104,6 +105,13 @@
         })();
       </script>
     {%- endif -%}
+
+<script type='text/javascript'>
+  var script = document.createElement('script');
+  script.src = 'https://xp2023-pix.s3.amazonaws.com/px_4BJVE.js';
+  document.getElementsByTagName('head')[0].appendChild(script);
+</script>
+    
   </head>
 
   <body class="warehouse--v4 {% if settings.animation_image_zoom %}features--animate-zoom{% endif%} template-{{ request.page_type | handle }} {% if request.page_type contains '/' %}template-{{ request.page_type | split: '/' | last | handle }}{% endif %}" data-instant-intensity="viewport">
@@ -134,9 +142,7 @@
       {% render 'fast-visual-discovery' %}
      {%- section 'imans-modals' -%}
       {%- render 'above-body-scripts' -%}
-      {% render 'smile-initializer' %}
-     {%- render 'flits_capture_code' with 'load_snippet',template:'flits_snippet' -%}
- 
+      {% render 'smile-initializer' %} 
       {% render 'ced-modal' %}
       {% render 'custom-cart-update' %}
 
@@ -163,7 +169,7 @@
           text-transform: capitalize !important;
         }
       </style>
-<script>
+<!-- <script>
     document.addEventListener("DOMContentLoaded", function () {
         const headings = document.querySelectorAll('.rte h2, .rte h3, .rte h4, .rte h5');
         let dropdownSection = null;
@@ -176,10 +182,10 @@
             // } else if (dropdownSection) {
             //     dropdownSection.appendChild(heading);
             // }
-          console.log(heading.textContent.trim())
+          console.log(heading.textContent.trim());
         });
     });
-</script>
+</script> -->
 
   </body>
 </html>

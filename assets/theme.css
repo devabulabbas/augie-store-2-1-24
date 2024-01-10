@@ -7897,7 +7897,7 @@ select option {
 }
 
 .product-meta__vendor {
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .product-meta__vendor + .product-meta__sku:before {

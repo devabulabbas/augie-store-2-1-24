@@ -113,7 +113,7 @@
             "settings": {
               "title": "Oversized Shipping",
               "modalname": "freightshipping",
-              "content": "<div>\n<ul>\n    <li>\n        <strong>Freight<\/strong>: For oversized items, the freight cost is $545 per item. The item will arrive secured to a pallet and delivered up to your address. Please note that freight delivery does not include bringing the shipment inside your address, unpacking, or disposing of packing material. You will be responsible for moving the shipment into your address, unpacking, and disposing of packing material.\n    <\/li>\n    <li>\n        <strong>Inside Delivery<\/strong>: If you require inside delivery, the cost is $995 for the first oversized item and $695 for each additional oversized item. This includes unloading, unpacking, disposing of packing material, and placement of your items in the location of your choice.\n    <\/li>\n    <li>\n        <strong>Residential Inside Delivery (Hospital Beds)<\/strong>: For oversized hospital beds shipping to residential addresses, the cost is $1,995 per item. This includes unloading, unpacking, disposing of packing material, and placement of your items in the location of your choice.\n        <ul>\n            <li>Please note that inside delivery does not include training, assembly, or installation. It is your responsibility to ensure that the items can be delivered to the desired location without issue. The carrier is not able to remove old equipment or obstacles.<\/li>\n        <\/ul>\n    <\/li>\n<\/ul>\n<p>For further information, please refer to our <a class=\"link link--accented\" href=\"https:\/\/help.mfimedical.com\/en-US\/shipping-policy-204650\" title=\"https:\/\/help.mfimedical.com\/en-US\/shipping-policy-204650\">Shipping Policy<\/a>.<\/p>\n<\/div>",
+              "content": "<div>\n<ul>\n    <li>\n        <strong>Freight<\/strong>: For oversized items, the freight cost is $545 per item. The item will arrive secured to a pallet and delivered up to your address. Please note that freight delivery does not include bringing the shipment inside your address, unpacking, or disposing of packing material. You will be responsible for moving the shipment into your address, unpacking, and disposing of packing material. If inside delivery is requested after shipment, then the customer may be subject to additional fees which can exceed the flat rate cost for inside delivery.\n    <\/li>\n    <li>\n        <strong>Inside Delivery<\/strong>: If you require inside delivery, the cost is $995 for the first oversized item and $695 for each additional oversized item. This includes unloading, unpacking, disposing of packing material, and placement of your items in the location of your choice.\n    <\/li>\n    <li>\n        <strong>Residential Inside Delivery (Hospital Beds)<\/strong>: For oversized hospital beds shipping to residential addresses, the cost is $1,995 per item. This includes unloading, unpacking, disposing of packing material, and placement of your items in the ground floor location of your choice.\n        <ul>\n            <li>Please note that inside delivery does not include training, assembly, or installation. It is your responsibility to ensure that the items can be delivered to the desired location without issue. The carrier is not able to remove old equipment or obstacles. Inside delivery is not available for residences with stairs, including apartments, duplexes, or houses. Please confirm that your desired location is without stairs. <\/li>\n        <\/ul>\n    <\/li>\n<\/ul>\n<p>For further information, please refer to our <a class=\"link link--accented\" href=\"https:\/\/help.mfimedical.com\/en-US\/shipping-policy-204650\" title=\"https:\/\/help.mfimedical.com\/en-US\/shipping-policy-204650\">Shipping Policy<\/a>.<\/p>\n<\/div>",
               "hidemodalcompletely": false
             }
           },
@@ -158,7 +158,7 @@
             "settings": {
               "title": "Earn Points on Orders",
               "modalname": "earnpoints",
-              "content": "<p>At MFI Medical, you can earn points with every purchase you make.<\/p>\n<p>These points can be redeemed at checkout for cash savings. Gold VIP members receive 1 point for every dollar spent, while Platinum VIP members receive 2 points for every dollar spent. Diamond VIP members receive 3 points for every dollar spent.<\/p>\n<p><a href=\"https:\/\/mfimedical.com\/account\/register\" class=\"color-link\" target=\"_blank\">Create your online account today<\/a> and get 250 points just for signing up!<\/p>",
+              "content": "<p>At MFI, you can earn points with every purchase you make.<\/p>\n<p>These points can be redeemed at checkout for cash savings. Receive 1 point for every dollar spent.<\/p>\n<p><a href=\"https:\/\/mfimedical.com\/account\/register\" class=\"color-link\" target=\"_blank\">Create your online account today<\/a> and get 250 points just for signing up!<\/p>",
               "hidemodalcompletely": false
             }
           },
@@ -227,12 +227,6 @@
         "settings": {
         }
       },
-      "14082181514032464150": {
-        "type": "shopify:\/\/apps\/quote-snap-hide-price-b2b\/blocks\/omgrfq_script\/5f4ac0e6-8a57-4f3d-853e-0194eab86273",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "11724500921838622758": {
         "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
         "disabled": false,
@@ -288,6 +282,12 @@
       },
       "17987146178959213818": {
         "type": "shopify:\/\/apps\/conversios-all-in-one-pixel\/blocks\/app-embed-body\/cd4f446b-5a91-41c6-9c16-9ac519de9483",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "7974659707553285070": {
+        "type": "shopify:\/\/apps\/quotify\/blocks\/app-embed\/e72a6125-4dd6-4154-a361-ca94e10e6d52",
         "disabled": false,
         "settings": {
         }

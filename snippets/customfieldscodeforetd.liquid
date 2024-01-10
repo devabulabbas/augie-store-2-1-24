@@ -125,7 +125,7 @@
  
  {%- for variant in product.variants -%}
 
-  <div class="variant-custom-fields" data-variant-id="{{ variant.id }}" style="{% if product.selected_or_first_available_variant.id == variant.id %}display:block;{% else %}display:none;{% endif %}">
+  <div class="variant-custom-fields variant_estDelivery_meta" data-variant-id="{{ variant.id }}" style="{% if product.selected_or_first_available_variant.id == variant.id %}display:block;{% else %}display:none;{% endif %}">
     <div class="variant__cf">
       {% if machine != blank %}
       {% for info in machine %}

@@ -36,6 +36,78 @@
 
  
  document.addEventListener('variant:changed', function(event) {
+  let variant_id = event.detail.variant.id;
+   // Stat Change in Est delivery Of Origin Metafiled 
+    const elementsEstDelivery = document.querySelectorAll('.variant_estDelivery_meta');
+     elementsEstDelivery.forEach(element => {
+        element.style.display = "none";
+     });
+   
+    elementsEstDelivery.forEach(element => {
+    if (variant_id == element.dataset.variantId) {
+        element.style.display = "block";
+    }
+   });
+    // Stat Change in Est delivery Of Origin Metafiled
+    // Stat Change in stock Of Origin Metafiled 
+    const elementsInStock = document.querySelectorAll('.variant_instock');
+     elementsInStock.forEach(element => {
+        element.style.display = "none";
+     });
+   
+    elementsInStock.forEach(element => {
+    if (variant_id == element.dataset.variantId) {
+        element.style.display = "block";
+    }
+   });
+    // Stat Change in stock Of Origin Metafiled
+    // Stat Change warenty Of Origin Metafiled 
+    const elementsToWarrenty = document.querySelectorAll('.variant_warranty_meta');
+     elementsToWarrenty.forEach(element => {
+        element.style.display = "none";
+     });
+   
+    elementsToWarrenty.forEach(element => {
+    if (variant_id == element.dataset.variantId) {
+        element.style.display = "block";
+    }
+   });
+    // Stat Change warenty Of Origin Metafiled
+   // Stat Change Condition Of Origin Metafiled 
+    const elementsToMeta = document.querySelectorAll('.variant_condition_meta');
+     elementsToMeta.forEach(element => {
+        element.style.display = "none";
+     });
+   
+    elementsToMeta.forEach(element => {
+    if (variant_id == element.dataset.variantId) {
+        element.style.display = "block";
+    }
+   });
+    // Stat Change Condition Of Origin Metafiled
+   // Stat Change Country Of Origin Metafiled 
+    const elementsToCondition = document.querySelectorAll('.variant-countryOfOrigin');
+     elementsToCondition.forEach(element => {
+        element.style.display = "none";
+     });
+   
+    elementsToCondition.forEach(element => {
+    if (variant_id == element.dataset.variantId) {
+        element.style.display = "block";
+    }
+   });
+    // Stat Change Country Of Origin Metafiled
+   // Stat Change MPN Metafiled 
+    const elementsToToggle = document.querySelectorAll('.variant-mpn');
+     elementsToToggle.forEach(element => {
+        element.style.display = "none";
+     });
+    elementsToToggle.forEach(element => {
+      if(variant_id == element.dataset.variantId){
+        element.style.display = "block";
+      }
+    });
+    // Stat Change MPN Metafiled
     function variantEtdInput(){
       let eventID = event.detail.variant.id;
       let id = 'variant_leadtime_'+ eventID;
@@ -63,23 +135,56 @@
 
     //Availability
     if (event.detail.variant.available) {
-      // console.log("Variant is available");
-      document.getElementById('kf_condition')?.style.display = 'list-item';
-      document.getElementById('kf_warranty')?.style.display = 'list-item';
-      // document.querySelector('.ppextraspacer').style.display = 'block';
-      document.getElementById('pp_extra_shipping')?.style.display = 'block';
-      document.getElementById('pp_etd')?.style.display = 'flex';
-      document.getElementById('pp_belowatc_shipping')?.style.display = 'block';
+      const kfCondition = document.getElementById('kf_condition');
+      const kfWarranty = document.getElementById('kf_warranty');
+      const ppExtraShipping = document.getElementById('pp_extra_shipping');
+      const ppEtd = document.getElementById('pp_etd');
+      const ppBelowAtcShipping = document.getElementById('pp_belowatc_shipping');
+      if (kfCondition) {
+          kfCondition.style.display = 'list-item';
+      }
+      if (kfWarranty) {
+          kfWarranty.style.display = 'list-item';
+      }
+      if (ppExtraShipping) {
+          ppExtraShipping.style.display = 'block';
+      }
+      if (ppEtd) {
+          ppEtd.style.display = 'flex';
+      }
+      if (ppBelowAtcShipping) {
+          ppBelowAtcShipping.style.display = 'block';
+      }
     } else {
       // console.log("Variant is NOT available");
-      document.getElementById('kf_condition')?.style.display = 'none';
-      document.getElementById('kf_warranty')?.style.display = 'none';
-      // document.querySelector('.ppextraspacer').style.display = 'none';
-      document.getElementById('pp_extra_shipping')?.style.display = 'none';
-      document.getElementById('pp_etd')?.style.display = 'none';
-      document.getElementById('pp_belowatc_shipping')?.style.display = 'none';
-    }
-  
+      const kfCondition = document.getElementById('kf_condition');
+      const kfWarranty = document.getElementById('kf_warranty');
+      const ppExtraShipping = document.getElementById('pp_extra_shipping');
+      const ppEtd = document.getElementById('pp_etd');
+      const ppBelowAtcShipping = document.getElementById('pp_belowatc_shipping');
+      
+      if (kfCondition) {
+          kfCondition.style.display = 'none';
+      } else {
+      }
+      if (kfWarranty) {
+          kfWarranty.style.display = 'none';
+      } else {
+      }
+      if (ppExtraShipping) {
+          ppExtraShipping.style.display = 'none';
+      } else {
+      }
+      if (ppEtd) {
+          ppEtd.style.display = 'none';
+      } else {
+      }
+      if (ppBelowAtcShipping) {
+          ppBelowAtcShipping.style.display = 'none';
+      } else {
+      }
+          }
+        
   });
   
   /* EasyTabs custom */
